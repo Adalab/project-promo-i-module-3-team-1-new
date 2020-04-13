@@ -9,7 +9,7 @@ class SocialButton extends React.Component {
             <li id="socialButtonBox" className={this.props.class}>
                 <a 
                     id="emailButtonLink"
-                    class="preview__socialButton preview__socialButton--email buttonStyle1" 
+                    className="preview__socialButton preview__socialButton--email buttonStyle1" 
                     href={this.props.destination} 
                     target="_blank" 
                     title={this.props.name}

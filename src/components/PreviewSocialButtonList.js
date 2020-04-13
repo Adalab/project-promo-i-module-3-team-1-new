@@ -15,7 +15,7 @@ class PreviewSocialButtonList extends React.Component {
           name="email address"
           destination={`mailto:${this.props.email}`}
           iconType="far fa-envelope" 
-          className={(this.props.email === '' ? "newHidden" : "card__socialbuttons--box")}
+          class={(this.props.email === '' ? "newHidden" : "card__socialbuttons--box")}
        
             
 
@@ -24,19 +24,19 @@ class PreviewSocialButtonList extends React.Component {
           name="phone number"
           destination={`tel:${this.props.phone}`}
           iconType="fas fa-mobile-alt"
-          className={(this.props.phone === '' ? "newHidden" : "card__socialbuttons--box")}
+          class={(this.props.phone === '' ? "newHidden" : "card__socialbuttons--box")}
         />
         <SocialButton
           name="linkedin profile"
           destination={`https://www.linkedin.com/in/${this.props.linkedinuser}`}
           iconType="fab fa-linkedin-in"
-          className={(this.props.linkedin === '' ? "newHidden" : "card__socialbuttons--box")}
+          class={(this.props.linkedin === '' ? "newHidden" : "card__socialbuttons--box")}
         />
         <SocialButton 
           name="github profile" 
           destination={`https://www.github.com/${this.props.githubuser}`} 
           iconType="fab fa-github-alt" 
-          className={(this.props.github === '' ? "newHidden" : "card__socialbuttons--box")}
+          class={(this.props.github === '' ? "newHidden" : "card__socialbuttons--box")}
         />
       </ul>
     );
