@@ -68,8 +68,8 @@ class ProfilePageBody extends React.Component {
       userInfo:{
         ...this.state.userInfo,
         palette:'4',
-        name:'Nombre Apellidos',
-        job:'Front-Ende Developer',
+        name:'',
+        job:'',
         email:'',
         phone:'',
         linkedin:'',
