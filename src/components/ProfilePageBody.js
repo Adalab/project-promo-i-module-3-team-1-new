@@ -8,6 +8,7 @@ class ProfilePageBody extends React.Component {
     super(props);
     this.handleCollapse = this.handleCollapse.bind(this)
     this.handleInputValue = this.handleInputValue.bind(this);
+    this.handleReset = this.handleReset.bind(this);
     this.state = {
       activePanel: '',
       rotatearrow: '',
@@ -60,7 +61,9 @@ class ProfilePageBody extends React.Component {
       this.setState({ rotatearrow: '' })
     }
   }
-  
+  handleReset(){
+    /* esta función es la que falta por hacer con setState */
+  }
 
   render() {
 
@@ -77,6 +80,7 @@ class ProfilePageBody extends React.Component {
                           checked={this.state.userInfo.palette}
                           inputFile={this.state.userInfo.img}
                           handleImage={this.handleImage}
+                          handleReset={this.handleReset}
                           
                        />
           

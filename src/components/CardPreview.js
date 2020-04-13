@@ -13,7 +13,8 @@ class CardPreview extends React.Component {
     return (
       <div id="cardPreview" className="cardPreview grid-2">
         <div id="cardPreview__centeredBox" className="cardPreview__centeredBox" >
-          <PreviewResetButton />
+          <PreviewResetButton handleReset={this.props.handleReset}
+           />
           <div id="card" className="card" >
 
             <PreviewProfileInfo
