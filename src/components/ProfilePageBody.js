@@ -63,6 +63,21 @@ class ProfilePageBody extends React.Component {
   }
   handleReset(){
     /* esta función es la que falta por hacer con setState */
+    this.setState({activePanel:''})
+    this.setState({rotatearrow:''})
+    this.setState({
+      userInfo:{
+        ...this.state.userInfo,
+        palette:'4',
+        name:'Nombre Apellidos',
+        job:'Front-Ende Developer',
+        email:'',
+        phone:'',
+        linkedin:'',
+        github:'',
+        img: AvatarImg
+      }
+    })
   }
 
   render() {
