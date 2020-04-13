@@ -8,6 +8,7 @@ class Avatar extends React.Component {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.writeImage = this.writeImage.bind(this);
+    this.fakeClick = this.fakeClick.bind(this);
     this.fileInput = React.createRef();
     this.state = {
       img: AvatarImg
@@ -28,17 +29,18 @@ class Avatar extends React.Component {
     });
     this.props.handleImage(fr.result);
   }
-
+fakeClick(){
+  this.fileInput.current.click()
+}
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} className="form__open" id="form__fill--open">
+      <form /* onSubmit={this.handleSubmit} */ className="form__open" id="form__fill--open">
         <label for="photo">Imagen de perfil <span>*</span></label>
        
         <div class="photo__upload">
-        {/* <button class="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button> */}
         <input type="file" ref={this.fileInput} id="photo" name="photo" className="hiddenJS js__photo--file" required />
-          <button class="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button>
+          <button onClick={this.fakeClick} class="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button>
           <img className="thumbnail js__photo--thumbnail" src={this.state.img} alt="Imagen" />
 
         </div>

@@ -60,6 +60,7 @@ class ProfilePageBody extends React.Component {
       this.setState({ rotatearrow: '' })
     }
   }
+  
 
   render() {
 
