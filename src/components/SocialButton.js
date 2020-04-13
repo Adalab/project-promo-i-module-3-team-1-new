@@ -14,7 +14,7 @@ class SocialButton extends React.Component {
                     target="_blank" 
                     title={this.props.name}
                 >
-                    <i class={`icon ${this.props.iconType}`}></i>
+                    <i className={`icon ${this.props.iconType}`}></i>
                 </a>
             </li>
         );

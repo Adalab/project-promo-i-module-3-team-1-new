@@ -43,15 +43,6 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                 />
-                {/* <FillInput
-                            htmlFor="photo"
-                            labelName="Imagen de perfil *"
-                            inputType="file"
-                            inputId="photo"
-                            inputName="photo"
-                            inputClassName= "hidden hiddenJS js__photo--file"
-                required
-                />*/}
                 <Avatar  inputFile={this.props.inputFile}
                          handleImage={this.props.handleImage}/>
                  <FillInput

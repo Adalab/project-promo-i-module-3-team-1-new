@@ -20,7 +20,7 @@ class Design extends React.Component {
                     <h3>colores</h3>
                     <div className="paletteChoices">
 
-                        <input type="radio" id="paletteOne" handleInputValue={this.props.handleInputValue} class="radio_button rb_one" name="palette" value="1" onChange={this.handlePaletteChange} checked={this.props.checked === "1" ? true : false}>
+                        <input type="radio" id="paletteOne" handleInputValue={this.props.handleInputValue} className="radio_button rb_one" name="palette" value="1" onChange={this.handlePaletteChange} checked={this.props.checked === "1" ? true : false}>
                         </input>
                         <label htmlFor="paletteOne" className="palette-grid grid-one">
                             <div className="palOne_colOne"></div>

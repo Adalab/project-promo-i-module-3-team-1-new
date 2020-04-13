@@ -20,7 +20,7 @@ class Share extends React.Component {
                         <p>La tarjeta ha sido creada:</p>
                         <p className="linkResponse"></p>
                         <a href="" id="shareOnTwitter" className="share-twitter-button" target="_blank">
-                            <i class="fab fa-twitter"></i> Compartir en Twitter</a>
+                            <i className="fab fa-twitter"></i> Compartir en Twitter</a>
                     </div>
                 </div>
                 </section>
