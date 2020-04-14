@@ -16,7 +16,7 @@ constructor(props) {
   }
 
   render() {
-    
+    console.log(this.props)
     return (
       <div className="grid-1">
         <ul id="formList" className="formList">
@@ -55,6 +55,7 @@ constructor(props) {
                       handleInputValue={this.props.handleInputValue}
                       inputFile={this.props.inputFile}
                       handleImage={this.props.handleImage}
+                      validationEmail={this.validationEmail}
             />
           </CollapsableItem>
 

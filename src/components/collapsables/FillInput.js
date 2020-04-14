@@ -27,6 +27,7 @@ class FillInput extends React.Component{
                         value={this.props.value}
                         onChange={this.changeInputValue}
                         required={this.props.required}
+                        
                 />
                 
             </div>
