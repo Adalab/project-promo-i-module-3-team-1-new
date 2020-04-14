@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../stylesheets/Design.scss';
-import InputRadio from '../InputRadio';
+
 
 class Design extends React.Component {
     constructor(props) {
