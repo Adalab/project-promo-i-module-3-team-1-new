@@ -18,7 +18,8 @@ class Fill extends React.Component{
     // }
 
     validationEmail(event) {
-        this.props.validationEmail(event.target)
+        console.log('Fill', event)
+        //this.props.validationEmail(event.target)
     }
     validationPhone() {
         this.props.validationPhone()
@@ -27,7 +28,7 @@ class Fill extends React.Component{
 
 
     render(){
-        console.log('fill', this.props)
+        // console.log('fill', this.props)
         return(
             <section  className="form__sections form__fill">
                 <div className="form__open" id="form__fill--open">
@@ -73,8 +74,7 @@ class Fill extends React.Component{
                             value={this.props.valueEmail}
                             handleInputValue={this.props.handleInputValue}
                             required
-                            
-                            onKeyUp={this.validationEmail}
+                            onChange={this.validationEmail}
                 />
                                
                 <p className={`text-error ${this.props.errorEmail} === false ? '' : ' newHidden'`}> *Dinos tu email por favor

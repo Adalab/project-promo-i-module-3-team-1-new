@@ -65,6 +65,7 @@ class ProfilePageBody extends React.Component {
   //   }
 
   validationEmail(target) {
+    debugger;
     if(target.inputName === 'email'){
 
             this.setState(prevState => {
@@ -73,6 +74,7 @@ class ProfilePageBody extends React.Component {
            });
     
             if(target.value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)){
+
                 this.setState({
                    errorEmail: true,
                })

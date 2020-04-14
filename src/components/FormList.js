@@ -16,7 +16,7 @@ constructor(props) {
   }
 
   render() {
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <div className="grid-1">
         <ul id="formList" className="formList">
