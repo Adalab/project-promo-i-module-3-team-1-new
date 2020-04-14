@@ -16,7 +16,7 @@ class FillInput extends React.Component{
         return(
             <div className="form__flex">
                 <label htmlFor={this.props.htmlFor}>{this.props.labelName}</label>
-                <p className={`text-error ${this.props.errorInput}`}> {this.props.textError}
+                <p className={`newHidden text-error ${this.props.errorInput}`}> {this.props.textError}
                 </p>
                 <input  type={this.props.inputType}
                         id={this.props.inputId} 

@@ -8,11 +8,17 @@ import Avatar from './Avatar';
 class Fill extends React.Component{
     constructor(props){
         super(props);
+        this.validationEmail= this.validationEmail.bind(this)
+        this.validationPhone= this.validationPhone.bind(this)
         
     };
+    // const handleLinksChange = event => {
+    //     const target = event.target;
+    //     props.handleLinksChange(target);
+    // }
 
-    validationEmail() {
-        this.props.validationEmail()
+    validationEmail(event) {
+        this.props.validationEmail(event.target)
     }
     validationPhone() {
         this.props.validationPhone()
@@ -37,13 +43,9 @@ class Fill extends React.Component{
                             value={this.props.valueName}
                             handleInputValue={this.props.handleInputValue}
                             required
-                           // errorInput={errorName === true ? '' : ' hidden'}
-                           textError ="*Dinos tu nombre por favor"
-                           
-
-                            
-
-                />
+                            />
+                <p className={`text-error ${this.props.errorName} === true ? '' : ' newHidden'`}> *Dinos tu nombre por favor
+                </p>
                 <FillInput
                             htmlFor="job"
                             labelName="Profesión *"
@@ -71,10 +73,12 @@ class Fill extends React.Component{
                             value={this.props.valueEmail}
                             handleInputValue={this.props.handleInputValue}
                             required
-                            errorInput={this.props.errorEmail === true ? '' : ' newHidden'}
-                            textError ="*Dejanos tu email"
+                            
                             onKeyUp={this.validationEmail}
                 />
+                               
+                <p className={`text-error ${this.props.errorEmail} === false ? '' : ' newHidden'`}> *Dinos tu email por favor
+                </p>
                  <FillInput
                             htmlFor="phone"
                             labelName="Teléfono"

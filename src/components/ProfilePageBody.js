@@ -6,13 +6,14 @@ import AvatarImg from '../components/collapsables/Default_avatar.js'
 class ProfilePageBody extends React.Component {
   constructor(props) {
     super(props);
+    console.log('PROFILE', this.props)
 
-    console.log('profilepagebody', this.state)
+
 
     this.handleCollapse = this.handleCollapse.bind(this)
     this.handleInputValue = this.handleInputValue.bind(this);
     this.handleReset = this.handleReset.bind(this);
-    this.validationHandler = this.validationHandler.bind(this)
+    // this.validationHandler = this.validationHandler.bind(this)
     this.validationEmail = this.validationEmail.bind(this)
     this.validationPhone = this.validationPhone.bind(this)
     this.state = {
@@ -21,11 +22,10 @@ class ProfilePageBody extends React.Component {
       AvatarImg: true,
       errorName: false,
       errorJob: false,
-      errorEmail: false,
+      errorEmail:'' ,
       errorLinkedin: false,
-      isFormValid: false,
       isLoading: false,
-      isError: true,
+
 
       userInfo: {
         palette: '4',
@@ -44,18 +44,45 @@ class ProfilePageBody extends React.Component {
     this.handleImage = this.handleImage.bind(this);
   }
 
+  // handleLinksChange(target) {
 
-  validationEmail() {
-    if (this.state.userInfo.email === '' || !this.state.userInfo.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
-        this.setState({
-            errorEmail: true
-        })
-    } else {
-        this.setState({
-            errorEmail: false
-        })
-    }
-}
+  //   if(target.name === 'email'){
+
+  //       this.setState(prevState => {
+  //           let newUserInfo = prevState.userInfo;
+  //           return {userInfo: { ...newUserInfo, "email": target.value}}
+  //       });
+
+  //       if(target.value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)){
+  //           this.setState({
+  //               validEmail: true,
+  //           })
+  //       }  else {
+  //           this.setState({
+  //           validEmail: false,
+  //           })
+  //       }
+  //   }
+
+  validationEmail(target) {
+    if(target.inputName === 'email'){
+
+            this.setState(prevState => {
+               let newUserInfo = prevState.userInfo;
+              return {userInfo: { ...newUserInfo, "email": target.value}}
+           });
+    
+            if(target.value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)){
+                this.setState({
+                   errorEmail: true,
+               })
+            }  else {
+                 this.setState({
+               errorEmail: false,
+                })
+            }
+         }
+        }
 
 validationPhone() {
     if (!this.state.userInfo.phone.match(/^[0-9]{9}/)) {
@@ -65,20 +92,6 @@ validationPhone() {
 
     }
 }
-
-
-validationHandler() {
-    const { name, job, linkedin, github, img } = this.state.userInfo;
-    const { errorPhone, errorEmail } = this.state;
-
-    if (name === '' || job === '' || linkedin === '' || github === '' || errorPhone === true || errorEmail === true || img === AvatarImg) {
-        this.setState({ isFormValid: false })
-    } else {
-        this.setState({ isFormValid: true })
-    }
-}
-
-
 
 
   handleImage(img) {
@@ -162,7 +175,7 @@ validationHandler() {
           handleInputValue={this.handleInputValue}
           inputFile={this.state.userInfo.img}
           handleImage={this.handleImage}
-          errorInput={this.state.errorInput}
+          
           errorEmail={this.state.errorEmail}
           validationEmail={this.validationEmail}
         />
