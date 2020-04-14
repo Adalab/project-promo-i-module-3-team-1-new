@@ -1,6 +1,7 @@
 import React from 'react';
 import AvatarImg from './Default_avatar.js'
 
+
 const fr = new FileReader();
 
 class Avatar extends React.Component {
@@ -14,7 +15,6 @@ class Avatar extends React.Component {
       img: AvatarImg
     };
   }
-
 
   handleSubmit(event) {
     event.preventDefault();
@@ -42,9 +42,10 @@ fakeClick(){
         <div className="photo__upload">
         <input  type="file" ref={this.fileInput} id="photo" name="photo" className="hiddenJS js__photo--file" required />
           <button onClick={this.fakeClick} className="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button>
-          <img className="thumbnail js__photo--thumbnail" src={this.state.img} alt="Imagen" />
-
+          <img className="thumbnail js__photo--thumbnail" src={this.state.img} alt="Imagen" /> 
         </div>
+        <p className={`text-error ${this.props.errorInput}`}> {this.props.textError}
+      </p>
       </form>
 
     );

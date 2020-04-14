@@ -52,7 +52,9 @@ class Fill extends React.Component{
                             textError ="*Tu trabajo también, gracias"
                 />
                 <Avatar  inputFile={this.props.inputFile}
-                         handleImage={this.props.handleImage}/>
+                         handleImage={this.props.handleImage}
+                         textError ="*Sube una imagen"
+                         />
                  <FillInput
                             htmlFor="email"
                             labelName="Email *"
@@ -64,7 +66,7 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                             // errorInput={errorEmail === true ? '' : ' hidden'}
-                            textError ="*Sube una imagen"
+                            textError ="*Dejanos tu email"
                 />
                  <FillInput
                             htmlFor="phone"
