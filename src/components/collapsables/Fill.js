@@ -18,8 +18,6 @@ class Fill extends React.Component{
                 <div className="form__open" id="form__fill--open">
                 
 
-              
-
                 <FillInput  htmlFor="name"
                             labelName="Nombre completo *"
                             inputType="text"
