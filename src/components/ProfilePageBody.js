@@ -14,7 +14,7 @@ class ProfilePageBody extends React.Component {
       rotatearrow: '',
 
       userInfo: {
-        palette: '',
+        palette: '4',
         name: '',
         job: '',
         email: '',
@@ -25,6 +25,7 @@ class ProfilePageBody extends React.Component {
 
       }
     }
+
     this.handleImage = this.handleImage.bind(this);
   }
 
