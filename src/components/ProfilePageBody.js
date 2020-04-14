@@ -23,7 +23,15 @@ class ProfilePageBody extends React.Component {
         github: '',
         img: AvatarImg
 
-      }
+      },
+      isPhotoDefault: true,
+      errorName: false,
+      errorJob: false,
+      errorEmail: false,
+      errorLinkedin: false,
+      isFormValid: false,
+      isLoading: false,
+      isError: true
     }
 
     this.handleImage = this.handleImage.bind(this);

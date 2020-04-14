@@ -2,7 +2,13 @@
 @import './base/reset.scss';
 
 
-.text-error {color:red}
+.text-error {
+    color:red;
+    padding-top:5px;
+}
+.error{
+    border:1px solid red;
+}
 
 .hiddenJS{  /* he creado una clase diferente para este input concreto */
     display:none;
@@ -31,7 +37,7 @@
 
     input {
         border: 1px solid $borderColor;
-        margin: 25px 0 20px 0;
+        margin: 25px 0 10px 0px;
         height: 30px;
         width: 100%;
 

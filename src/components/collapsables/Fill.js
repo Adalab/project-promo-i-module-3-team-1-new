@@ -53,7 +53,6 @@ class Fill extends React.Component{
                 />
                 <Avatar  inputFile={this.props.inputFile}
                          handleImage={this.props.handleImage}
-                         textError ="*Sube una imagen"
                          />
                  <FillInput
                             htmlFor="email"
