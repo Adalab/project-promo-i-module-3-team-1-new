@@ -6,12 +6,26 @@ import AvatarImg from '../components/collapsables/Default_avatar.js'
 class ProfilePageBody extends React.Component {
   constructor(props) {
     super(props);
+
+    console.log('profilepagebody', this.state)
+
     this.handleCollapse = this.handleCollapse.bind(this)
     this.handleInputValue = this.handleInputValue.bind(this);
     this.handleReset = this.handleReset.bind(this);
+    this.validationHandler = this.validationHandler.bind(this)
+    this.validationEmail = this.validationEmail.bind(this)
+    this.validationPhone = this.validationPhone.bind(this)
     this.state = {
       activePanel: '',
       rotatearrow: '',
+      AvatarImg: true,
+      errorName: false,
+      errorJob: false,
+      errorEmail: false,
+      errorLinkedin: false,
+      isFormValid: false,
+      isLoading: false,
+      isError: true,
 
       userInfo: {
         palette: '4',
@@ -23,11 +37,49 @@ class ProfilePageBody extends React.Component {
         github: '',
         img: AvatarImg
 
-      }
+      },
+    
     }
 
     this.handleImage = this.handleImage.bind(this);
   }
+
+
+  validationEmail() {
+    if (this.state.userInfo.email === '' || !this.state.userInfo.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+        this.setState({
+            errorEmail: true
+        })
+    } else {
+        this.setState({
+            errorEmail: false
+        })
+    }
+}
+
+validationPhone() {
+    if (!this.state.userInfo.phone.match(/^[0-9]{9}/)) {
+        this.setState({ errorPhone: true })
+    } else {
+        this.setState({ errorPhone: false })
+
+    }
+}
+
+
+validationHandler() {
+    const { name, job, linkedin, github, img } = this.state.userInfo;
+    const { errorPhone, errorEmail } = this.state;
+
+    if (name === '' || job === '' || linkedin === '' || github === '' || errorPhone === true || errorEmail === true || img === AvatarImg) {
+        this.setState({ isFormValid: false })
+    } else {
+        this.setState({ isFormValid: true })
+    }
+}
+
+
+
 
   handleImage(img) {
     
@@ -81,7 +133,7 @@ class ProfilePageBody extends React.Component {
   }
 
   render() {
-    
+   
     return (
         <div id="profilePageBody" className="profilePageBody">
             <CardPreview  valueName={this.state.userInfo.name}
@@ -110,6 +162,9 @@ class ProfilePageBody extends React.Component {
           handleInputValue={this.handleInputValue}
           inputFile={this.state.userInfo.img}
           handleImage={this.handleImage}
+          errorInput={this.state.errorInput}
+          errorEmail={this.state.errorEmail}
+          validationEmail={this.validationEmail}
         />
 
       </div>
