@@ -80,8 +80,6 @@ class ProfilePageBody extends React.Component {
   }
 
   render() {
-
-    console.log(this.state.userInfo.img)
     
     return (
         <div id="profilePageBody" className="profilePageBody">

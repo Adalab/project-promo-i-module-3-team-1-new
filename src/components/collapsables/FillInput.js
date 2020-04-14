@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class FillInput extends React.Component{
     constructor(props){
     super(props)
@@ -8,7 +7,7 @@ class FillInput extends React.Component{
     }
     changeInputValue(event){
         this.props.handleInputValue(event.currentTarget.name, event.currentTarget.value)
-        console.log(event.currentTarget)
+        
         
             
     }
@@ -21,7 +20,7 @@ class FillInput extends React.Component{
                         id={this.props.inputId} 
                         name={this.props.inputName}
                         placeholder={this.props.placeHolder}
-                        maxlength={this.props.maxLength}
+                        maxLength={this.props.maxLength}
                         className={this.props.inputClassName}
                         value={this.props.value}
                         onChange={this.changeInputValue}
@@ -32,4 +31,5 @@ class FillInput extends React.Component{
         );
     }
 }
+
 export default FillInput;

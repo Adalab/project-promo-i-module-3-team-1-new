@@ -37,9 +37,9 @@ fakeClick(){
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="form__open" id="form__fill--open">
-        <label for="photo">Imagen de perfil <span>*</span></label>
+        <label htmlFor="photo">Imagen de perfil <span>*</span></label>
        
-        <div class="photo__upload">
+        <div className="photo__upload">
         <input  type="file" ref={this.fileInput} id="photo" name="photo" className="hiddenJS js__photo--file" required />
           <button onClick={this.fakeClick} className="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button>
           <img className="thumbnail js__photo--thumbnail" src={this.state.img} alt="Imagen" />
