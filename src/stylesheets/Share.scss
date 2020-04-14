@@ -2,11 +2,12 @@
 @import 'core/variables';
 @import './core/mixins';
 
-.active{
-    display:block;
+.active {
+    display: block;
 
 }
-.create-card-button-container{
+
+.create-card-button-container {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -16,7 +17,7 @@
     padding-bottom: 30px;
 
 
-    .create-card-button{
+    .create-card-button {
         width: 200px;
         height: 50px;
         background-color: $secondaryColor;
@@ -24,28 +25,37 @@
         border-radius: 12px;
 
         &:hover {
-            background-color: $hoverColor;
+            color: $secondaryColor;
+            background-color: white;
+
+            a {
+                color: $secondaryColor;
+            }
+
+            i {
+                color: $secondaryColor;
+            }
+
         }
 
-            a{
-                text-transform: uppercase;
-                font-family: $mainText;
-                font-weight: 500;
-                text-decoration: none;
+        a {
+            text-transform: uppercase;
+            font-family: $mainText;
+            font-weight: 500;
+            text-decoration: none;
+            color: white;
+
+            i {
                 color: white;
-                    i{
-                        color:white;
-                        margin-right: 10px;
-                    }
-                
+                margin-right: 10px;
             }
+
+        }
     }
-    .off{
-        background-color: $hoverColor;
-    }
+
 }
 
-.created-container{
+.created-container {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -54,16 +64,16 @@
     padding: 20px 0 30px 0;
     border-top: 1px solid $borderLineColor;
 
-    p{
+    p {
         padding: 5px 0;
         font-size: 18px;
         color: $primaryColor;
         font-family: $mainText;
     }
 
-    a{
+    a {
         display: block;
-        color:$secondaryColor;
+        color: $secondaryColor;
         padding-bottom: 10px;
         padding-top: 5px;
         font-family: $mainText;
@@ -72,7 +82,7 @@
         text-decoration: none;
     }
 
-    .share-twitter-button{
+    .share-twitter-button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -87,11 +97,12 @@
         font-family: $mainText;
         font-weight: normal;
         font-size: 14px;
-            .fab{
-                margin-right: 5px;
-                font-size: $mainTitleSize;
-            }
-        
+
+        .fab {
+            margin-right: 5px;
+            font-size: $mainTitleSize;
+        }
+
 
     }
 }

@@ -17,6 +17,9 @@ class Fill extends React.Component{
             <section  className="form__sections form__fill">
                 <div className="form__open" id="form__fill--open">
                 
+
+              
+
                 <FillInput  htmlFor="name"
                             labelName="Nombre completo *"
                             inputType="text"
@@ -27,7 +30,10 @@ class Fill extends React.Component{
                             value={this.props.valueName}
                             handleInputValue={this.props.handleInputValue}
                             required
+                           // errorInput={errorName === true ? '' : ' hidden'}
+                           textError ="*Dinos tu nombre por favor"
                            
+
                             
 
                 />
@@ -42,6 +48,8 @@ class Fill extends React.Component{
                             value={this.props.valueJob}
                             handleInputValue={this.props.handleInputValue}
                             required
+                            // errorInput={errorJob === true ? '' : ' hidden'}
+                            textError ="*Tu trabajo también, gracias"
                 />
                 <Avatar  inputFile={this.props.inputFile}
                          handleImage={this.props.handleImage}/>
@@ -55,6 +63,8 @@ class Fill extends React.Component{
                             value={this.props.valueEmail}
                             handleInputValue={this.props.handleInputValue}
                             required
+                            // errorInput={errorEmail === true ? '' : ' hidden'}
+                            textError ="*Sube una imagen"
                 />
                  <FillInput
                             htmlFor="phone"
@@ -65,7 +75,7 @@ class Fill extends React.Component{
                             placeHolder= "Ej: 555-55-55-55"
                             value={this.props.valuePhone}
                             handleInputValue={this.props.handleInputValue}
-                            required
+                            
                 />
                 <FillInput
                             htmlFor="linkedin"
@@ -77,6 +87,8 @@ class Fill extends React.Component{
                             value={this.props.valueLinkedin}
                             handleInputValue={this.props.handleInputValue}
                             required
+                            // errorInput={errorLinkedin === true ? '' : ' hidden'}
+                            textError ="*Déjanos tu LinkedIn"
                 />
                  <FillInput
                             htmlFor="github"
@@ -88,6 +100,8 @@ class Fill extends React.Component{
                             value={this.props.valueGithub}
                             handleInputValue={this.props.handleInputValue}
                             required
+                            // errorInput={errorGitHub === true ? '' : ' hidden'}
+                            textError ="*Dinos tu GitHub, por favor"
                 />
                
                 </div>

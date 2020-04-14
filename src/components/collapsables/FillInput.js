@@ -26,6 +26,8 @@ class FillInput extends React.Component{
                         onChange={this.changeInputValue}
                         required={this.props.required}
                 />
+                <p className={`text-error ${this.props.errorInput}`}> {this.props.textError}
+                </p>
             </div>
 
         );
