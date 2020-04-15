@@ -56,6 +56,8 @@ constructor(props) {
                       inputFile={this.props.inputFile}
                       handleImage={this.props.handleImage}
                       validationEmail={this.validationEmail}
+                      errorEmail={this.props.errorEmail}
+
             />
           </CollapsableItem>
 

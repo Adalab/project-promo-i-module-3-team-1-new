@@ -8,19 +8,17 @@ import Avatar from './Avatar';
 class Fill extends React.Component{
     constructor(props){
         super(props);
-        this.validationEmail= this.validationEmail.bind(this)
+        // this.validationEmail= this.validationEmail.bind(this)
         this.validationPhone= this.validationPhone.bind(this)
         
     };
-    // const handleLinksChange = event => {
-    //     const target = event.target;
-    //     props.handleLinksChange(target);
-    // }
+   
 
-    validationEmail(event) {
-        console.log('Fill', event)
-        //this.props.validationEmail(event.target)
-    }
+    // validationEmail(event) {
+    //     let inputEmail = event.currentTarget
+    //     console.log('Fill', inputEmail)
+    //     this.props.validationEmail(inputEmail)
+    // }
     validationPhone() {
         this.props.validationPhone()
     }
@@ -77,7 +75,7 @@ class Fill extends React.Component{
                             onChange={this.validationEmail}
                 />
                                
-                <p className={`text-error ${this.props.errorEmail} === false ? '' : ' newHidden'`}> *Dinos tu email por favor
+                <p className={`text-error ${this.props.errorEmail === false ? '' : 'newHidden'}`}> *Dinos tu email por favor
                 </p>
                  <FillInput
                             htmlFor="phone"
