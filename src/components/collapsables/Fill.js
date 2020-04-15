@@ -14,11 +14,11 @@ class Fill extends React.Component{
     };
    
 
-    // validationEmail(event) {
-    //     let inputEmail = event.currentTarget
-    //     console.log('Fill', inputEmail)
-    //     this.props.validationEmail(inputEmail)
-    // }
+     validationEmail(event) {
+         let inputEmail = event.currentTarget
+         console.log('Fill', inputEmail)
+         this.props.validationEmail(inputEmail)
+     }
     validationPhone() {
         this.props.validationPhone()
     }
@@ -86,6 +86,7 @@ class Fill extends React.Component{
                             placeHolder= "Ej: 555-55-55-55"
                             value={this.props.valuePhone}
                             handleInputValue={this.props.handleInputValue}
+                            
                             
                 />
                 <FillInput
