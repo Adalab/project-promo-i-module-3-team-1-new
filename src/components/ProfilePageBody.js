@@ -17,7 +17,7 @@ class ProfilePageBody extends React.Component {
     this.validationEmail = this.validationEmail.bind(this)
     this.validationName = this.validationName.bind(this)
     this.validationJob = this.validationJob.bind(this)
-  
+
     this.state = {
       activePanel: '',
       rotatearrow: '',
@@ -116,102 +116,132 @@ class ProfilePageBody extends React.Component {
     }
   }
 
-  
 
-    handleImage(img) {
 
-      this.setState(prevState => {
-        return {
-          userInfo: {
-            ...prevState.userInfo,
-            img: img
-          }
+  handleImage(img) {
+
+    this.setState(prevState => {
+      return {
+        userInfo: {
+          ...prevState.userInfo,
+          img: img
         }
-      });
-    }
-
-    handleInputValue(currentTargetName, currentTargetValue) {
-      this.validationEmail(currentTargetName, currentTargetValue)
-      this.validationName(currentTargetName, currentTargetValue)
-      this.validationJob(currentTargetName, currentTargetValue)
-      this.setState(prevState => {
-        return {
-          userInfo: {
-            ...prevState.userInfo,
-            [currentTargetName]: currentTargetValue
-          }
-
-        }
-
-      })
-    }
-
-    handleCollapse(targetId) {
-      if (targetId !== this.state.activePanel) {
-        this.setState({ activePanel: targetId })
-        this.setState({ rotatearrow: targetId })
-      } else {
-        this.setState({ activePanel: '' })
-        this.setState({ rotatearrow: '' })
       }
-    }
-    handleReset() {
+    });
+  }
+
+  handleInputValue(currentTargetName, currentTargetValue) {
+    this.validationEmail(currentTargetName, currentTargetValue)
+    this.validationName(currentTargetName, currentTargetValue)
+    this.validationJob(currentTargetName, currentTargetValue)
+    this.setState(prevState => {
+      return {
+        userInfo: {
+          ...prevState.userInfo,
+          [currentTargetName]: currentTargetValue
+        }
+
+      }
+
+    })
+  }
+
+  handleCollapse(targetId) {
+    if (targetId !== this.state.activePanel) {
+      this.setState({ activePanel: targetId })
+      this.setState({ rotatearrow: targetId })
+    } else {
       this.setState({ activePanel: '' })
       this.setState({ rotatearrow: '' })
-      this.setState({
-        userInfo: {
-          ...this.state.userInfo,
-          palette: '4',
-          name: '',
-          job: '',
-          email: '',
-          phone: '',
-          linkedin: '',
-          github: '',
-          img: AvatarImg
-        }
-      })
-    }
-
-    render() {
-
-      return (
-        <div id="profilePageBody" className="profilePageBody">
-          <CardPreview valueName={this.state.userInfo.name}
-            valueJob={this.state.userInfo.job}
-            valueEmail={this.state.userInfo.email}
-            valuePhone={this.state.userInfo.phone}
-            valueLinkedin={this.state.userInfo.linkedin}
-            valueGithub={this.state.userInfo.github}
-            checked={this.state.userInfo.palette}
-            inputFile={this.state.userInfo.img}
-            handleImage={this.handleImage}
-            handleReset={this.handleReset}
-
-          />
-
-          <FormList handleCollapse={this.handleCollapse}
-            rotatearrow={this.state.rotatearrow}
-            activePanel={this.state.activePanel}
-            valuepalette={this.state.userInfo.palette}
-            valueName={this.state.userInfo.name}
-            valueJob={this.state.userInfo.job}
-            valueEmail={this.state.userInfo.email}
-            valuePhone={this.state.userInfo.phone}
-            valueLinkedin={this.state.userInfo.linkedin}
-            valueGithub={this.state.userInfo.github}
-            handleInputValue={this.handleInputValue}
-            inputFile={this.state.userInfo.img}
-            handleImage={this.handleImage}
-            errorJob = {this.state.errorJob}
-            errorName = {this.state.errorName}
-            errorEmail = {this.state.errorEmail}
-
-
-          />
-
-        </div>
-      )
     }
   }
-  export default ProfilePageBody;
+  handleReset() {
+    this.setState({ activePanel: '' })
+    this.setState({ rotatearrow: '' })
+    this.setState({
+      userInfo: {
+        ...this.state.userInfo,
+        palette: '4',
+        name: '',
+        job: '',
+        email: '',
+        phone: '',
+        linkedin: '',
+        github: '',
+        img: AvatarImg
+      }
+    })
+  }
+
+  componentDidMount(){
+    const data = JSON.parse(localStorage.getItem('data'));
+
+    if(data !== null){
+        this.setState({
+            userInfo: {
+                "palette": data.palette !== '' ? data.palette : '4',
+                "name": data.name,
+                "job": data.job,
+                "phone": data.phone,
+                "email": data.email,
+                "linkedin": data.linkedin,
+                "github": data.github,
+                "img": data.img !== '' ? data.img : AvatarImg,
+            },
+          
+            AvatarImg: data.img === true,
+            errorName: data.name !== '' ? true : false,
+            errorJob: data.job !== '' ? true : false,
+            errorEmail: data.errorEmail !== '' ? true : false,
+         
+        })
+    }
+}
+
+  componentDidUpdate(){
+    localStorage.setItem('data', JSON.stringify(this.state.userInfo));
+
+}
+
+  render() {
+
+    return (
+      <div id="profilePageBody" className="profilePageBody">
+        <CardPreview valueName={this.state.userInfo.name}
+          valueJob={this.state.userInfo.job}
+          valueEmail={this.state.userInfo.email}
+          valuePhone={this.state.userInfo.phone}
+          valueLinkedin={this.state.userInfo.linkedin}
+          valueGithub={this.state.userInfo.github}
+          checked={this.state.userInfo.palette}
+          inputFile={this.state.userInfo.img}
+          handleImage={this.handleImage}
+          handleReset={this.handleReset}
+
+        />
+
+        <FormList handleCollapse={this.handleCollapse}
+          rotatearrow={this.state.rotatearrow}
+          activePanel={this.state.activePanel}
+          valuepalette={this.state.userInfo.palette}
+          valueName={this.state.userInfo.name}
+          valueJob={this.state.userInfo.job}
+          valueEmail={this.state.userInfo.email}
+          valuePhone={this.state.userInfo.phone}
+          valueLinkedin={this.state.userInfo.linkedin}
+          valueGithub={this.state.userInfo.github}
+          handleInputValue={this.handleInputValue}
+          inputFile={this.state.userInfo.img}
+          handleImage={this.handleImage}
+          errorJob={this.state.errorJob}
+          errorName={this.state.errorName}
+          errorEmail={this.state.errorEmail}
+
+
+        />
+
+      </div>
+    )
+  }
+}
+export default ProfilePageBody;
