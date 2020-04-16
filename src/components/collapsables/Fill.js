@@ -8,21 +8,10 @@ import Avatar from './Avatar';
 class Fill extends React.Component{
     constructor(props){
         super(props);
-        // this.validationEmail= this.validationEmail.bind(this)
-        this.validationPhone= this.validationPhone.bind(this)
+     
         
     };
    
-
-    // validationEmail(event) {
-    //     let inputEmail = event.currentTarget
-    //     console.log('Fill', inputEmail)
-    //     this.props.validationEmail(inputEmail)
-    // }
-    validationPhone() {
-        this.props.validationPhone()
-    }
-
 
 
     render(){
@@ -43,7 +32,7 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                             />
-                <p className={`text-error ${this.props.errorName} === true ? '' : ' newHidden'`}> *Dinos tu nombre por favor
+                <p className={`text-error ${this.props.errorName === false ? '' : ' newHidden'}`}> *Dinos tu nombre por favor
                 </p>
                 <FillInput
                             htmlFor="job"

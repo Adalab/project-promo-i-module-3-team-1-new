@@ -55,7 +55,7 @@ constructor(props) {
                       handleInputValue={this.props.handleInputValue}
                       inputFile={this.props.inputFile}
                       handleImage={this.props.handleImage}
-                      validationEmail={this.validationEmail}
+                      errorName = {this.props.errorName}
                       errorEmail={this.props.errorEmail}
 
             />
