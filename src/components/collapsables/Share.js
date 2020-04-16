@@ -10,7 +10,8 @@ class Share extends React.Component {
             <section className="form__sections form__share">
                 <div className="form__open" id="form__share--open">
                     <div className="create-card-button-container">
-                            <button id="createCardButton" type="button" className="create-card-button">
+                            <button id="createCardButton" type="button" className="create-card-button"
+                            disabled={this.props.errorName === false || this.props.errorEmail === false || this.props.errorJob === false}>
                                 <a href="#" arial-label="Crear tarjeta"><i className="far fa-address-card"></i>Crear tarjeta</a>
                             </button>
                     </div>

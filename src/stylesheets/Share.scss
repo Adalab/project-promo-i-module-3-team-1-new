@@ -53,7 +53,13 @@
         }
     }
 
+    .create-card-button:disabled {
+        background: grey !important;
+        pointer-events: none;
+    }
+
 }
+
 
 .created-container {
     margin-left: auto;

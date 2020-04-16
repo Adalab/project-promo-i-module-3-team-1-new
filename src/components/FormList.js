@@ -71,7 +71,9 @@ constructor(props) {
 
         >
         
-            <Share/> 
+            <Share  errorName = {this.props.errorName}
+                    errorEmail={this.props.errorEmail}
+                    errorJob = {this.props.errorJob}/> 
         </CollapsableItem>
 
         </ul>
