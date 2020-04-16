@@ -16,6 +16,7 @@ class ProfilePageBody extends React.Component {
     // this.validationHandler = this.validationHandler.bind(this)
     this.validationEmail = this.validationEmail.bind(this)
     this.validationName = this.validationName.bind(this)
+    this.validationJob = this.validationJob.bind(this)
   
     this.state = {
       activePanel: '',
@@ -93,6 +94,29 @@ class ProfilePageBody extends React.Component {
     }
   }
 
+  validationJob(valueName, valueTarget) {
+    if (valueName === 'job') {
+
+      this.setState(prevState => {
+        let newUserInfo = prevState.userInfo;
+        return {
+          userInfo: { ...newUserInfo, "job": valueTarget }
+        }
+      })
+      if (valueTarget !== '') {
+        this.setState({
+          errorJob: true,
+        })
+      } else {
+        this.setState({
+          errorJob: false,
+        })
+      }
+
+    }
+  }
+
+  
 
     handleImage(img) {
 
@@ -109,6 +133,7 @@ class ProfilePageBody extends React.Component {
     handleInputValue(currentTargetName, currentTargetValue) {
       this.validationEmail(currentTargetName, currentTargetValue)
       this.validationName(currentTargetName, currentTargetValue)
+      this.validationJob(currentTargetName, currentTargetValue)
       this.setState(prevState => {
         return {
           userInfo: {
@@ -178,8 +203,10 @@ class ProfilePageBody extends React.Component {
             handleInputValue={this.handleInputValue}
             inputFile={this.state.userInfo.img}
             handleImage={this.handleImage}
-            errorEmail={this.state.errorEmail}
+            errorJob = {this.state.errorJob}
             errorName = {this.state.errorName}
+            errorEmail = {this.state.errorEmail}
+
 
           />
 

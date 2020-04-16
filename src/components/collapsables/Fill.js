@@ -48,6 +48,8 @@ class Fill extends React.Component{
                             // errorInput={errorJob === true ? '' : ' hidden'}
                             textError ="*Tu trabajo también, gracias"
                 />
+                <p className={`text-error ${this.props.errorJob === false ? '' : 'newHidden'}`}> *Dinos tu profesión por favor
+                </p>
                 <Avatar  inputFile={this.props.inputFile}
                          handleImage={this.props.handleImage}
                          />

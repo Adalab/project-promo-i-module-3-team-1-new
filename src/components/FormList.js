@@ -57,6 +57,7 @@ constructor(props) {
                       handleImage={this.props.handleImage}
                       errorName = {this.props.errorName}
                       errorEmail={this.props.errorEmail}
+                      errorJob = {this.props.errorJob}
 
             />
           </CollapsableItem>
