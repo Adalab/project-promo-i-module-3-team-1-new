@@ -25,7 +25,6 @@ class ProfilePageBody extends React.Component {
       errorName: false,
       errorJob: false,
       errorEmail: false,
-      errorLinkedin: false,
       isLoading: false,
 
 
@@ -159,6 +158,10 @@ class ProfilePageBody extends React.Component {
     this.setState({ activePanel: '' })
     this.setState({ rotatearrow: '' })
     this.setState({
+      AvatarImg: true,
+        errorName: false,
+        errorJob: false,
+        errorEmail: false,
       userInfo: {
         ...this.state.userInfo,
         palette: '4',
@@ -169,8 +172,10 @@ class ProfilePageBody extends React.Component {
         linkedin: '',
         github: '',
         img: AvatarImg
-      }
+        }
+        
     })
+    
   }
 
   componentDidMount(){
