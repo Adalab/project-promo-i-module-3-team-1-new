@@ -1,5 +1,5 @@
 import React from 'react';
-import AvatarImg from './Default_avatar.js'
+import Avatarphoto from './Default_avatar.js'
 
 
 const fr = new FileReader();
@@ -12,7 +12,7 @@ class Avatar extends React.Component {
     this.fakeClick = this.fakeClick.bind(this);
     this.fileInput = React.createRef();
     this.state = {
-      img: AvatarImg
+      photo: Avatarphoto
     };
   }
 
@@ -26,7 +26,7 @@ class Avatar extends React.Component {
 
   writeImage() {
     this.setState({
-      img: fr.result
+      photo: fr.result
     });
     this.props.handleImage(fr.result);
   }
@@ -44,7 +44,7 @@ render() {
        
       <input type="file" ref={this.fileInput} id="photo" name="photo" className="hiddenJS js__photo--file" onChange={this.handleSubmit} required />
         <button onClick={this.fakeClick} className="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button>
-        <img className="thumbnail js__photo--thumbnail" src={this.state.img} alt="Imagen" /> 
+        <img className="thumbnail js__photo--thumbnail" src={this.state.photo} alt="Imagen" /> 
       </div>
       <p className={`text-error ${this.props.errorInput}`}> {this.props.textError}
     </p>

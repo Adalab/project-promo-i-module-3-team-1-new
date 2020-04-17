@@ -1,8 +1,9 @@
 import React from 'react';
 import FormList from './FormList';
 import CardPreview from './CardPreview';
-import AvatarImg from '../components/collapsables/Default_avatar.js'
+import Avatarphoto from '../components/collapsables/Default_avatar.js'
 import { fetchCardData } from '../services/Fetch.js'
+import AvatarImg from '../components/collapsables/Default_avatar.js';
 
 class ProfilePageBody extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class ProfilePageBody extends React.Component {
     this.state = {
       activePanel: '',
       rotatearrow: '',
-      AvatarImg: true,
+      Avatarphoto: true,
       errorName: false,
       errorJob: false,
       errorEmail: false,
@@ -40,7 +41,7 @@ class ProfilePageBody extends React.Component {
         phone: '',
         linkedin: '',
         github: '',
-        img: AvatarImg
+        photo: AvatarImg
 
       },
 
@@ -121,13 +122,13 @@ class ProfilePageBody extends React.Component {
 
 
 
-  handleImage(img) {
+  handleImage(photo) {
 
     this.setState(prevState => {
       return {
         userInfo: {
           ...prevState.userInfo,
-          img: img
+          photo: photo
         }
       }
     });
@@ -162,11 +163,11 @@ class ProfilePageBody extends React.Component {
     this.setState({ activePanel: '' })
     this.setState({ rotatearrow: '' })
     this.setState({
-      AvatarImg: true,
+      Avatarphoto: true,
         errorName: false,
         errorJob: false,
         errorEmail: false,
-        img: AvatarImg,
+        photo: Avatarphoto,
       userInfo: {
         ...this.state.userInfo,
         palette: '4',
@@ -176,7 +177,7 @@ class ProfilePageBody extends React.Component {
         phone: '',
         linkedin: '',
         github: '',
-        img: AvatarImg
+        photo: Avatarphoto
         }
         
     })
@@ -196,10 +197,10 @@ class ProfilePageBody extends React.Component {
                 "email": data.email,
                 "linkedin": data.linkedin,
                 "github": data.github,
-                "img": data.img !== '' ? data.img : AvatarImg,
+                "photo": data.photo !== '' ? data.photo : Avatarphoto,
             },
           
-            AvatarImg: data.img === true,
+            Avatarphoto: data.photo === true,
             errorName: data.name !== '' ? true : false,
             errorJob: data.job !== '' ? true : false,
             errorEmail: data.errorEmail !== '' ? true : false,
@@ -251,7 +252,7 @@ setURL(result){
           valueLinkedin={this.state.userInfo.linkedin}
           valueGithub={this.state.userInfo.github}
           checked={this.state.userInfo.palette}
-          inputFile={this.state.userInfo.img}
+          inputFile={this.state.userInfo.photo}
           handleImage={this.handleImage}
           handleReset={this.handleReset}
 
@@ -268,7 +269,7 @@ setURL(result){
           valueLinkedin={this.state.userInfo.linkedin}
           valueGithub={this.state.userInfo.github}
           handleInputValue={this.handleInputValue}
-          inputFile={this.state.userInfo.img}
+          inputFile={this.state.userInfo.photo}
           handleImage={this.handleImage}
           errorJob={this.state.errorJob}
           errorName={this.state.errorName}
@@ -276,7 +277,7 @@ setURL(result){
           cardURL={this.state.cardURL}
           cardSuccess={this.state.cardSuccess}
           fetchCardData={this.fetchCardData}
-          avatarThumbnail={this.state.img}
+          avatarThumbnail={this.state.photo}
           handleReset={this.handleReset}
 
         />
