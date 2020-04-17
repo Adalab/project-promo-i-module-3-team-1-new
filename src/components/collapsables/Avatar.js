@@ -17,39 +17,41 @@ class Avatar extends React.Component {
   }
 
   handleSubmit(event) {
-    event.preventDefault();
-    const myFile = this.fileInput.current.files[0];
+    const myFile = event.currentTarget.files[0];
     fr.addEventListener('load', this.writeImage);
     fr.readAsDataURL(myFile);
+   // this.fileInput.current.value = '';
   }
 
+
   writeImage() {
-   
     this.setState({
       img: fr.result
     });
     this.props.handleImage(fr.result);
   }
+
 fakeClick(){
   this.fileInput.current.click()
 }
 
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit} className="form__open" id="form__fill--open">
-        <label htmlFor="photo">Imagen de perfil <span>*</span></label>
+render() {
+  return (
+    <div className="form__open" id="form__fill--open"> 
+      <label htmlFor="photo">Imagen de perfil <span>*</span></label>
+     
+      <div className="photo__upload">
        
-        <div className="photo__upload">
-        <input  type="file" ref={this.fileInput} id="photo" name="photo" className="hiddenJS js__photo--file" required />
-          <button onClick={this.fakeClick} className="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button>
-          <img className="thumbnail js__photo--thumbnail" src={this.state.img} alt="Imagen" /> 
-        </div>
-        <p className={`text-error ${this.props.errorInput}`}> {this.props.textError}
-      </p>
-      </form>
-
-    );
-  }
+      <input type="file" ref={this.fileInput} id="photo" name="photo" className="hiddenJS js__photo--file" onChange={this.handleSubmit} required />
+        <button onClick={this.fakeClick} className="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button>
+        <img className="thumbnail js__photo--thumbnail" src={this.state.img} alt="Imagen" /> 
+      </div>
+      <p className={`text-error ${this.props.errorInput}`}> {this.props.textError}
+    </p>
+    </div>
+  );
 }
+}
+
 
 export default Avatar;

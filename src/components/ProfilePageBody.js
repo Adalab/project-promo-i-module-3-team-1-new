@@ -2,6 +2,7 @@ import React from 'react';
 import FormList from './FormList';
 import CardPreview from './CardPreview';
 import AvatarImg from '../components/collapsables/Default_avatar.js'
+import { fetchCardData } from '../services/Fetch.js'
 
 class ProfilePageBody extends React.Component {
   constructor(props) {
@@ -17,6 +18,8 @@ class ProfilePageBody extends React.Component {
     this.validationEmail = this.validationEmail.bind(this)
     this.validationName = this.validationName.bind(this)
     this.validationJob = this.validationJob.bind(this)
+    this.setURL = this.setURL.bind(this);
+    this.fetchCardData = this.fetchCardData.bind(this);
 
     this.state = {
       activePanel: '',
@@ -26,7 +29,8 @@ class ProfilePageBody extends React.Component {
       errorJob: false,
       errorEmail: false,
       isLoading: false,
-
+      cardURL: '',
+      cardSuccess: '',
 
       userInfo: {
         palette: '4',
@@ -47,7 +51,7 @@ class ProfilePageBody extends React.Component {
 
 
   validationEmail(valueName, valueTarget) {
-    // debugger;
+
     if (valueName === 'email') {
 
       this.setState(prevState => {
@@ -162,6 +166,7 @@ class ProfilePageBody extends React.Component {
         errorName: false,
         errorJob: false,
         errorEmail: false,
+        img: AvatarImg,
       userInfo: {
         ...this.state.userInfo,
         palette: '4',
@@ -198,6 +203,7 @@ class ProfilePageBody extends React.Component {
             errorName: data.name !== '' ? true : false,
             errorJob: data.job !== '' ? true : false,
             errorEmail: data.errorEmail !== '' ? true : false,
+            cardURL: ''
          
         })
     }
@@ -207,6 +213,32 @@ class ProfilePageBody extends React.Component {
     localStorage.setItem('data', JSON.stringify(this.state.userInfo));
 
 }
+
+fetchCardData(){
+  const json = JSON.parse(localStorage.getItem('data'));
+  fetchCardData(json)
+  .then(result => this.setURL(result))
+  .catch(error => console.log(error));
+  this.setState({
+      isLoading: true
+  })
+}
+setURL(result){
+  if(result.success){
+      this.setState({
+          cardURL: result.cardURL,
+          isLoading: false,
+          cardSuccess: true
+      })
+  } else {
+      this.setState({
+          cardURL: 'ERROR:' + result.error,
+          isLoading: false
+      })
+  }
+}
+
+
 
   render() {
 
@@ -241,7 +273,11 @@ class ProfilePageBody extends React.Component {
           errorJob={this.state.errorJob}
           errorName={this.state.errorName}
           errorEmail={this.state.errorEmail}
-
+          cardURL={this.state.cardURL}
+          cardSuccess={this.state.cardSuccess}
+          fetchCardData={this.fetchCardData}
+          avatarThumbnail={this.state.img}
+          handleReset={this.handleReset}
 
         />
 

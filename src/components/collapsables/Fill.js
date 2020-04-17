@@ -52,6 +52,8 @@ class Fill extends React.Component{
                 </p>
                 <Avatar  inputFile={this.props.inputFile}
                          handleImage={this.props.handleImage}
+                         avatarThumbnail={this.props.avatarThumbnail}
+                         handleReset={this.props.handleReset}
                          />
                  <FillInput
                             htmlFor="email"

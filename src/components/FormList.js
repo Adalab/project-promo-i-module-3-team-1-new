@@ -58,6 +58,8 @@ constructor(props) {
                       errorName = {this.props.errorName}
                       errorEmail={this.props.errorEmail}
                       errorJob = {this.props.errorJob}
+                      avatarThumbnail={this.props.avatarThumbnail}
+                      handleReset={this.props.handleReset}
 
             />
           </CollapsableItem>
@@ -73,7 +75,10 @@ constructor(props) {
         
             <Share  errorName = {this.props.errorName}
                     errorEmail={this.props.errorEmail}
-                    errorJob = {this.props.errorJob}/> 
+                    errorJob = {this.props.errorJob}
+                    cardURL={this.props.cardURL}
+                    fetchCardData={this.props.fetchCardData}
+              />
         </CollapsableItem>
 
         </ul>
