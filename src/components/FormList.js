@@ -16,7 +16,6 @@ constructor(props) {
   }
 
   render() {
-    // console.log(this.props)
     return (
       <div className="grid-1">
         <ul id="formList" className="formList">
@@ -58,7 +57,6 @@ constructor(props) {
                       errorName = {this.props.errorName}
                       errorEmail={this.props.errorEmail}
                       errorJob = {this.props.errorJob}
-                      avatarThumbnail={this.props.avatarThumbnail}
                       handleReset={this.props.handleReset}
 
             />

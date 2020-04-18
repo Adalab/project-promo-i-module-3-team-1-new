@@ -12,10 +12,7 @@ class Fill extends React.Component{
         
     };
    
-
-
     render(){
-        // console.log('fill', this.props)
         return(
             <section  className="form__sections form__fill">
                 <div className="form__open" id="form__fill--open">
@@ -45,16 +42,12 @@ class Fill extends React.Component{
                             value={this.props.valueJob}
                             handleInputValue={this.props.handleInputValue}
                             required
-                            // errorInput={errorJob === true ? '' : ' hidden'}
-                            textError ="*Tu trabajo también, gracias"
                 />
                 <p className={`text-error ${this.props.errorJob === false ? '' : 'newHidden'}`}> *Dinos tu profesión por favor
                 </p>
                 <Avatar  inputFile={this.props.inputFile}
                          handleImage={this.props.handleImage}
-                         avatarThumbnail={this.props.avatarThumbnail}
-                         handleReset={this.props.handleReset}
-                         />
+                />
                  <FillInput
                             htmlFor="email"
                             labelName="Email *"
@@ -91,8 +84,6 @@ class Fill extends React.Component{
                             value={this.props.valueLinkedin}
                             handleInputValue={this.props.handleInputValue}
                             required
-                            // errorInput={errorLinkedin === true ? '' : ' hidden'}
-                            textError ="*Déjanos tu LinkedIn"
                 />
                  <FillInput
                             htmlFor="github"
@@ -104,8 +95,6 @@ class Fill extends React.Component{
                             value={this.props.valueGithub}
                             handleInputValue={this.props.handleInputValue}
                             required
-                            // errorInput={errorGitHub === true ? '' : ' hidden'}
-                            textError ="*Dinos tu GitHub, por favor"
                 />
                
                 </div>
