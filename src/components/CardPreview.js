@@ -33,7 +33,7 @@ class CardPreview extends React.Component {
                                        phone={this.props.valuePhone}
                                        linkedin={this.props.valueLinkedin}
                                        github={this.props.valueGithub}
-                                       />
+            />
           </div>
         </div>
       </div>

@@ -8,19 +8,15 @@ import AvatarImg from '../components/collapsables/Default_avatar.js';
 class ProfilePageBody extends React.Component {
   constructor(props) {
     super(props);
-    console.log('PROFILE', this.props)
-
-
-
     this.handleCollapse = this.handleCollapse.bind(this)
     this.handleInputValue = this.handleInputValue.bind(this);
     this.handleReset = this.handleReset.bind(this);
-    // this.validationHandler = this.validationHandler.bind(this)
     this.validationEmail = this.validationEmail.bind(this)
     this.validationName = this.validationName.bind(this)
     this.validationJob = this.validationJob.bind(this)
     this.setURL = this.setURL.bind(this);
     this.fetchCardData = this.fetchCardData.bind(this);
+    this.handleImage = this.handleImage.bind(this);
 
     this.state = {
       activePanel: '',
@@ -46,8 +42,6 @@ class ProfilePageBody extends React.Component {
       },
 
     }
-
-    this.handleImage = this.handleImage.bind(this);
   }
 
 
@@ -120,8 +114,6 @@ class ProfilePageBody extends React.Component {
     }
   }
 
-
-
   handleImage(photo) {
 
     this.setState(prevState => {
@@ -167,7 +159,6 @@ class ProfilePageBody extends React.Component {
         errorName: false,
         errorJob: false,
         errorEmail: false,
-        photo: Avatarphoto,
       userInfo: {
         ...this.state.userInfo,
         palette: '4',
@@ -177,7 +168,7 @@ class ProfilePageBody extends React.Component {
         phone: '',
         linkedin: '',
         github: '',
-        photo: Avatarphoto
+        photo: AvatarImg
         }
         
     })
@@ -238,9 +229,6 @@ setURL(result){
       })
   }
 }
-
-
-
   render() {
 
     return (
@@ -277,7 +265,6 @@ setURL(result){
           cardURL={this.state.cardURL}
           cardSuccess={this.state.cardSuccess}
           fetchCardData={this.fetchCardData}
-          avatarThumbnail={this.state.photo}
           handleReset={this.handleReset}
 
         />
