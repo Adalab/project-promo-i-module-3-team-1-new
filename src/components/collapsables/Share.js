@@ -15,13 +15,12 @@ class Share extends React.Component {
         };
     };
 
-
     render() {
         return (
             <section className="form__sections form__share">
                 <div className="form__open" id="form__share--open">
                     <div className="create-card-button-container">
-                            <button id="createCardButton" type="button" className="create-card-button" onClick={this.props.fetchCardData}
+                            <button id="createCardButton" type="button" className="create-card-button" onClick={this.fetchCardData}
                             disabled={this.props.errorName === false || this.props.errorEmail === false || this.props.errorJob === false}>
                                 <p><i className="far fa-address-card"></i>Crear tarjeta</p>
                             </button>

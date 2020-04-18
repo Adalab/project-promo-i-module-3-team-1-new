@@ -75,6 +75,7 @@ constructor(props) {
                     errorEmail={this.props.errorEmail}
                     errorJob = {this.props.errorJob}
                     cardURL={this.props.cardURL}
+                    cardSuccess={this.props.cardSuccess}
                     fetchCardData={this.props.fetchCardData}
               />
         </CollapsableItem>
