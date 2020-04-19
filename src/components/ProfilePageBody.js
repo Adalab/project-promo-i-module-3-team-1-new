@@ -159,6 +159,8 @@ class ProfilePageBody extends React.Component {
         errorName: false,
         errorJob: false,
         errorEmail: false,
+        cardURL: '',
+        cardSuccess: false,
       userInfo: {
         ...this.state.userInfo,
         palette: '4',
