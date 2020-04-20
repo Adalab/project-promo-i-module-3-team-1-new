@@ -77,6 +77,7 @@ constructor(props) {
                     cardURL={this.props.cardURL}
                     cardSuccess={this.props.cardSuccess}
                     fetchCardData={this.props.fetchCardData}
+                    isLoading = {this.props.isLoading}
               />
         </CollapsableItem>
 

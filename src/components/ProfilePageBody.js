@@ -17,6 +17,7 @@ class ProfilePageBody extends React.Component {
     this.setURL = this.setURL.bind(this);
     this.fetchCardData = this.fetchCardData.bind(this);
     this.handleImage = this.handleImage.bind(this);
+    // this.isLoadingChange = this.isLoadingChange.bind(this);
 
     this.state = {
       activePanel: '',
@@ -151,6 +152,10 @@ class ProfilePageBody extends React.Component {
       this.setState({ rotatearrow: '' })
     }
   }
+
+//   isLoadingChange() {
+//     this.setState({ isLoading: true })
+// }
   handleReset() {
     this.setState({ activePanel: '' })
     this.setState({ rotatearrow: '' })
@@ -268,6 +273,7 @@ setURL(result){
           cardSuccess={this.state.cardSuccess}
           fetchCardData={this.fetchCardData}
           handleReset={this.handleReset}
+          isLoading={this.state.isLoading}
 
         />
 
