@@ -62,7 +62,7 @@ class ProfilePageBody extends React.Component {
         this.setState({
           errorEmail: true,
         })
-      } else {
+      } else if (valueTarget === '') {
         this.setState({
           errorEmail: false,
         })
@@ -201,7 +201,7 @@ class ProfilePageBody extends React.Component {
             Avatarphoto: data.photo === true,
             errorName: data.name !== '' ? true : false,
             errorJob: data.job !== '' ? true : false,
-            errorEmail: data.errorEmail !== '' ? true : false,
+            errorEmail: data.errorEmail === false,
             cardURL: ''
          
         })

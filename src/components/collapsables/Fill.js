@@ -59,10 +59,10 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                             onChange={this.validationEmail}
-                />
-                               
+                />      
                 <p className={`text-error ${this.props.errorEmail === false ? '' : 'newHidden'}`}> *Dinos tu email por favor
                 </p>
+
                  <FillInput
                             htmlFor="phone"
                             labelName="Teléfono"

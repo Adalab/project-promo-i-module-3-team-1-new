@@ -40,8 +40,8 @@ render() {
         <button onClick={this.fakeClick} className="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button>
         <img className="thumbnail js__photo--thumbnail" src={this.props.inputFile} alt="Imagen" /> 
       </div>
-      <p className={`text-error ${this.props.errorInput}`}> {this.props.textError}
-    </p>
+      {/* <p className={`text-error ${this.props.errorInput}`}> {this.props.textError}
+    </p> */}
     </div>
   );
 }
