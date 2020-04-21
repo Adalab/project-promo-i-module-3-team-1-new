@@ -1,6 +1,7 @@
 import React from 'react';
 import '../stylesheets/LandingPage.scss';
 import logo from '../images/awesome_logo.svg'
+import {Link} from 'react-router-dom';
 
 class LandingPageBody extends React.Component {
     constructor(props) {
@@ -40,9 +41,11 @@ class LandingPageBody extends React.Component {
                     </div>
                     <div className="button-container">
                       <a href="./card.html" arial-label="Botón: Comenzar"/>
-                        <button type="button" className="button" title="Botón: Comenzar">
-                          comenzar
-                        </button>
+                      <Link className="ldng-btn" to="/profilepage">
+                          <button type="button" className="button" title="Botón: Comenzar">
+                            comenzar
+                          </button>
+                          </Link>
                     </div>
                   </div>
               

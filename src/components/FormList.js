@@ -87,11 +87,11 @@ constructor(props) {
   }
 }
 FormList.propTypes = {
-  valueName:PropTypes.string.isRequired,
-  valueJob:PropTypes.string.isRequired,
-  valueEmail: PropTypes.string.isRequired,
-  valuePhone: PropTypes.number,
-  valueLinkedin:PropTypes.string.isRequired,
-  valueGithub:PropTypes.string.isRequired,
+valueName:PropTypes.string.isRequired,
+valueJob:PropTypes.string.isRequired,
+valueEmail: PropTypes.string.isRequired,
+valuePhone: PropTypes.number,
+valueLinkedin:PropTypes.string.isRequired,
+valueGithub:PropTypes.string.isRequired,
 }
 export default FormList;
