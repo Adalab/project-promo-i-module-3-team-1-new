@@ -2,176 +2,191 @@
 @import 'core/variables';
 @import './core/mixins';
 
+//Create Card Button
 .active {
-    display: block;
+  display: block;
 
 }
 
 .create-card-button-container {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
 
-    .create-card-button {
-        width: 200px;
-        height: 50px;
-        background-color: $secondaryColor;
-        color: white;
-        border-radius: 12px;
+  .create-card-button {
+    width: 200px;
+    height: 50px;
+    background-color: $secondaryColor;
+    color: white;
+    border-radius: 12px;
 
-        &:hover {
-            color: $secondaryColor;
-            background-color: white;
+    &:hover {
+      color: $secondaryColor;
+      background-color: white;
 
-            p {
-                color: $secondaryColor;
-            }
+      p {
+        color: $secondaryColor;
+      }
 
-            i {
-                color: $secondaryColor;
-            }
+      i {
+        color: $secondaryColor;
+      }
 
-        }
-
-         p {
-            text-transform: uppercase;
-            font-family: $mainText;
-            font-weight: 500;
-            text-decoration: none;
-            color: white;
-
-            i {
-                color: white;
-                margin-right: 10px;
-            }
-
-        }
     }
-
-    .create-card-button:disabled {
-        background: grey !important;
-        pointer-events: none;
-    }
-
-}
-
-
-.created-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-    padding: 20px 0 30px 0;
-    border-top: 1px solid $borderLineColor;
 
     p {
-        padding: 5px 0;
-        font-size: 18px;
-        color: $primaryColor;
-        font-family: $mainText;
-    }
+      text-transform: uppercase;
+      font-family: $mainText;
+      font-weight: 500;
+      text-decoration: none;
+      color: white;
 
-    a {
-        display: block;
-        color: $secondaryColor;
-        padding-bottom: 10px;
-        padding-top: 5px;
-        font-family: $mainText;
-        font-size: 12px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    .share-twitter-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: inline-block;
-        background-color: #00a0f5;
+      i {
         color: white;
-        border-radius: 3px;
-        width: 180px;
-        height: 30px;
-        margin: 0 auto 0 auto;
-        border: 0;
-        font-family: $mainText;
-        font-weight: normal;
-        font-size: 14px;
-
-        .fab {
-            margin-right: 5px;
-            font-size: $mainTitleSize;
-        }
-
+        margin-right: 10px;
+      }
 
     }
+  }
+
+  .create-card-button:disabled {
+    background: grey !important;
+    pointer-events: none;
+  }
+
 }
-    // Loader
-    .wrapper-loader{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    .lds-ellipsis {
-        
-        
-        position: relative;
-        width: 80px;
-        height: 80px;
-      }
-      .lds-ellipsis div {
-        position: absolute;
-        top: 33px;
-        width: 13px;
-        height: 13px;
-        border-radius: 50%;
-        background: #cef;
-        animation-timing-function: cubic-bezier(0, 1, 1, 0);
-      }
-      .lds-ellipsis div:nth-child(1) {
-        left: 8px;
-        animation: lds-ellipsis1 0.6s infinite;
-      }
-      .lds-ellipsis div:nth-child(2) {
-        left: 8px;
-        animation: lds-ellipsis2 0.6s infinite;
-      }
-      .lds-ellipsis div:nth-child(3) {
-        left: 32px;
-        animation: lds-ellipsis2 0.6s infinite;
-      }
-      .lds-ellipsis div:nth-child(4) {
-        left: 56px;
-        animation: lds-ellipsis3 0.6s infinite;
-      }
-      @keyframes lds-ellipsis1 {
-        0% {
-          transform: scale(0);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-      @keyframes lds-ellipsis3 {
-        0% {
-          transform: scale(1);
-        }
-        100% {
-          transform: scale(0);
-        }
-      }
-      @keyframes lds-ellipsis2 {
-        0% {
-          transform: translate(0, 0);
-        }
-        100% {
-          transform: translate(24px, 0);
-        }
-      }
+
+//Twitter button
+
+.created-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 20px 0 30px 0;
+  border-top: 1px solid $borderLineColor;
+
+  p {
+    padding: 5px 0;
+    font-size: 18px;
+    color: $primaryColor;
+    font-family: $mainText;
+  }
+
+  a {
+    display: block;
+    color: $secondaryColor;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-family: $mainText;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .share-twitter-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    background-color: #00a0f5;
+    color: white;
+    border-radius: 3px;
+    width: 180px;
+    height: 30px;
+    margin: 0 auto 0 auto;
+    border: 0;
+    font-family: $mainText;
+    font-weight: normal;
+    font-size: 14px;
+
+    .fab {
+      margin-right: 5px;
+      font-size: $mainTitleSize;
     }
+
+
+  }
+}
+
+// Loader
+.wrapper-loader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .lds-ellipsis {
+
+
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #cef;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+}

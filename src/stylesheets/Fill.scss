@@ -1,6 +1,7 @@
 @import './core/variables';
 @import './base/reset.scss';
 
+//Text error Fill component
 
 .text-error {
     color:red;
@@ -10,15 +11,15 @@
     border:1px solid red;
 }
 
-.hiddenJS{  /* he creado una clase diferente para este input concreto */
-    display:none;
-} 
 .newHidden{
     display:none;
 }
 .active {
     display:block;
 }
+
+//Form Fill
+
 .form__fill {
     margin-bottom: 0px;
     
@@ -80,8 +81,7 @@
         border: 1px solid $borderColor;
         box-sizing: border-box;
         margin: 10px 0 0 20px;
-    //    background:url(../default-avatar.gif) no-repeat; /* no creo carpeta por poder haber conflicto */
-    //     background-size: cover;
+
     }
 } 
 

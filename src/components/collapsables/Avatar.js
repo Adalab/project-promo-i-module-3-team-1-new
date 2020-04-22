@@ -36,7 +36,7 @@ render() {
      
       <div className="photo__upload">
        
-      <input type="file" ref={this.fileInput} id="photo" name="photo" className="hiddenJS js__photo--file" onChange={this.handleSubmit} required />
+      <input type="file" ref={this.fileInput} id="photo" name="photo" className="newHidden js__photo--file" onChange={this.handleSubmit} required />
         <button onClick={this.fakeClick} className="photo__upload--btn js__photo--btn" id="submit">Añadir imagen </button>
         <img className="thumbnail js__photo--thumbnail" src={this.props.inputFile} alt="Imagen" /> 
       </div>
