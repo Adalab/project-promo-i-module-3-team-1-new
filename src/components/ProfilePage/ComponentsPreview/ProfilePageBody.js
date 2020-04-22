@@ -1,9 +1,9 @@
 import React from 'react';
-import FormList from './FormList';
-import CardPreview from './CardPreview';
-import Avatarphoto from '../components/collapsables/Default_avatar.js'
-import { fetchCardData } from '../services/Fetch.js'
-import AvatarImg from '../components/collapsables/Default_avatar.js';
+import FormAside from '../FormAside';
+import CardPreview from '../CardPreview';
+import Avatarphoto from '../ComponentsAside/Default_avatar.js';
+import { fetchCardData } from '../../../services/Fetch.js';
+
 
 class ProfilePageBody extends React.Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class ProfilePageBody extends React.Component {
         phone: '',
         linkedin: '',
         github: '',
-        photo: AvatarImg
+        photo: Avatarphoto
 
       },
 
@@ -173,7 +173,7 @@ class ProfilePageBody extends React.Component {
         phone: '',
         linkedin: '',
         github: '',
-        photo: AvatarImg
+        photo: Avatarphoto
         }
         
     })
@@ -199,7 +199,7 @@ class ProfilePageBody extends React.Component {
             Avatarphoto: data.photo === true,
             errorName: data.name !== '' ? true : false,
             errorJob: data.job !== '' ? true : false,
-            errorEmail: data.errorEmail === false,
+            errorEmail: data.email !== '' ? true : false,
             cardURL: ''
          
         })
@@ -251,7 +251,7 @@ setURL(result){
 
         />
 
-        <FormList handleCollapse={this.handleCollapse}
+        <FormAside handleCollapse={this.handleCollapse}
           rotatearrow={this.state.rotatearrow}
           activePanel={this.state.activePanel}
           valuepalette={this.state.userInfo.palette}

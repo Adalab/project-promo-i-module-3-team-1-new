@@ -1,7 +1,5 @@
 import React from 'react';
 import FillInput from './FillInput';
-import '../../stylesheets/Collapsables.scss';
-import '../../stylesheets/Fill.scss'
 import Avatar from './Avatar';
 
 

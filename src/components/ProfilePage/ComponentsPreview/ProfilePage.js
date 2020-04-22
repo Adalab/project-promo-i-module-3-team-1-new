@@ -1,8 +1,7 @@
 import React from 'react';
-import '../stylesheets/ProfilePage.scss';
-import AllPageHeader from './AllPageHeader';
+import AllPageHeader from '../../Landing/AllPageHeader';
 import ProfilePageBody from './ProfilePageBody';
-import AllPageFooter from './AllPageFooter';
+import AllPageFooter from '../../Landing/AllPageFooter';
 
 
 class ProfilePage extends React.Component {

@@ -1,8 +1,8 @@
 import React from 'react';
 import '../stylesheets/App.scss';
 import {Route, Switch } from 'react-router-dom';
-import ProfilePage from './ProfilePage';
-import LandingPage from './LandingPage';
+import ProfilePage from './ProfilePage/ComponentsPreview/ProfilePage';
+import LandingPage from './Landing/LandingPage';
 
 class App extends React.Component {
   constructor(props) {

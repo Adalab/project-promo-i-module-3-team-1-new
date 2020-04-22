@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../stylesheets/Collapsables.scss';
 
 
 class CollapsableItem extends React.Component {

@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from '../images/awesome_logo.svg'
-import '../stylesheets/Header.scss';
+import logo from '../../images/awesome_logo.svg'
 import {Link} from 'react-router-dom';
 
 class AllPageHeader extends React.Component {

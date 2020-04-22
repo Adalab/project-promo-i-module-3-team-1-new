@@ -1,5 +1,4 @@
 import React from 'react';
-import '../stylesheets/LandingPage.scss';
 import LandingPageBody from './LandingPageBody';
 import AllPageFooter from './AllPageFooter';
 

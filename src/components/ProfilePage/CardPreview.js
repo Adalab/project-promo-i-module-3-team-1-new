@@ -1,8 +1,8 @@
 import React from 'react';
-import PreviewResetButton from './PreviewResetButton.js';
-import PreviewProfileInfo from './PreviewProfileInfo.js';
-import PreviewAvatarBox from './PreviewAvatarBox.js';
-import PreviewSocialButtonList from './PreviewSocialButtonList.js';
+import PreviewResetButton from './ComponentsPreview/PreviewResetButton.js';
+import PreviewProfileInfo from './ComponentsPreview/PreviewProfileInfo.js';
+import PreviewAvatarBox from './ComponentsPreview/PreviewAvatarBox.js';
+import PreviewSocialButtonList from './ComponentsPreview/PreviewSocialButtonList.js';
 
 class CardPreview extends React.Component {
   constructor(props) {

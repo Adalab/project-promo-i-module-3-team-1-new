@@ -1,6 +1,5 @@
 import React from 'react';
-import '../stylesheets/LandingPage.scss';
-import logo from '../images/awesome_logo.svg'
+import logo from '../../images/awesome_logo.svg'
 import {Link} from 'react-router-dom';
 
 class LandingPageBody extends React.Component {

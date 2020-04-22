@@ -1,5 +1,4 @@
 import React from 'react';
-import '../stylesheets/Preview.scss';
 
 
 class PreviewProfileInfo extends React.Component {

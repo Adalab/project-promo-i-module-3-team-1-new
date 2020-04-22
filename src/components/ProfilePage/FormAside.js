@@ -1,14 +1,12 @@
 import React from 'react';
-import CollapsableItem from './collapsables/CollapsableItem';
-import Design from './collapsables/Design';
-import Share from './collapsables/Share.js';
-import Fill from './collapsables/Fill';
+import CollapsableItem from './ComponentsAside/CollapsableItem';
+import Design from './ComponentsAside/Design';
+import Share from './ComponentsAside/Share.js';
+import Fill from './ComponentsAside/Fill';
 import PropTypes from 'prop-types';
 
-import '../stylesheets/ProfilePage.scss';
 
-
-class FormList extends React.Component {
+class FormAside extends React.Component {
 
 constructor(props) {
     super(props);
@@ -86,7 +84,7 @@ constructor(props) {
     );
   }
 }
-FormList.propTypes = {
+FormAside.propTypes = {
 valueName:PropTypes.string.isRequired,
 valueJob:PropTypes.string.isRequired,
 valueEmail: PropTypes.string.isRequired,
@@ -94,4 +92,4 @@ valuePhone: PropTypes.number,
 valueLinkedin:PropTypes.string.isRequired,
 valueGithub:PropTypes.string.isRequired,
 }
-export default FormList;
+export default FormAside;

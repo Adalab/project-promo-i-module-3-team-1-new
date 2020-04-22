@@ -1,7 +1,6 @@
 import React from 'react';
-import '../stylesheets/Footer.scss';
-import logoAda from '../images/logo-adalab.png'
-import logoCo from '../images/rocket.png'
+import logoAda from '../../images/logo-adalab.png'
+import logoCo from '../../images/rocket.png'
 class AllPageFooter extends React.Component {
     constructor(props) {
       super(props);

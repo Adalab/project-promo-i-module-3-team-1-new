@@ -1,4 +1,14 @@
+@import './base/reset.scss';
 
 @import './core/variables';
-@import './base/reset.scss';
 @import './core/mixins';
+
+@import './layout/Collapsables';
+@import './layout/Design';
+@import './layout/Fill';
+@import './layout/Footer';
+@import './layout/Header';
+@import './layout/LandingPage';
+@import './layout/Preview';
+@import './layout/ProfilePage';
+@import './layout/Share';

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../stylesheets/Design.scss';
 
 
 class Design extends React.Component {

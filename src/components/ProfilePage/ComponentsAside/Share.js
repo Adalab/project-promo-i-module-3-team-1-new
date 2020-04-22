@@ -1,6 +1,5 @@
 import React from 'react';
-import '../../stylesheets/Share.scss';
-import Loader from '../Loader';
+import Loader from './Loader';
 
 class Share extends React.Component {
     constructor(props) {
