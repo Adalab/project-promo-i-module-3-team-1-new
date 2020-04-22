@@ -1,0 +1,134 @@
+
+
+.active {
+    display:block;
+
+}
+.newHidden {display: none;}
+
+//Palettes Design Collapsable
+
+.palettesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & h3 {
+        
+        text-transform: uppercase;
+        color: $primaryColor;
+        padding: 0;
+        padding-top: 0.75rem;
+        padding-left: 1.3125rem;
+        font-size: 0.875rem;
+        grid-column: 1/2;
+        font-family: $mainText;
+        font-style: inherit;
+       
+
+        @media all and (min-width: $tablet) {
+            padding-left: 0;
+        }
+    }
+    .paletteChoices {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 30px 90px;
+        grid-template-rows: repeat(4, 1.5625rem 1.25rem);
+        justify-content: end;
+        padding-top: 0.9375rem;
+
+        .radio_button {
+            justify-self: center;
+            align-self: center;
+        }
+        .rb_one {
+            grid-column: 1/2;
+        }
+
+        .rb_two {
+            grid-row: 3;
+            grid-column: 1/2;
+        }
+
+        .rb_three {
+            grid-row: 5;
+            grid-column: 1/2;
+        }
+
+        .rb_four {
+            grid-row: 7;
+            grid-column: 1/2;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 30px);
+            grid-template-rows: auto;
+            justify-content: end;
+            grid-column: 2/3;
+        }
+
+        .grid-one {
+            grid-row: 1;
+
+            .palOne_colOne {
+                background-color: $formText;
+            }
+
+            .palOne_colTwo {
+                background-color: $palete1Color2;
+            }
+
+            .palOne_colThree {
+                background-color: $borderColor;
+            }
+        }
+
+        .grid-two {
+            grid-row: 3;
+
+            .palTwo_colOne {
+                background-color: $palete2Color1;
+            }
+
+            .palTwo_colTwo {
+                background-color: $palete2Color2;
+            }
+
+            .palTwo_colThree {
+                background-color: $palete2Color3;
+            }
+        }
+        .grid-three {
+            grid-row: 5;
+
+            .palThree_colOne {
+                background-color: $palete3Color1;
+            }
+
+            .palThree_colTwo {
+                background-color: $palete3Color2;
+            }
+
+            .palThree_colThree {
+                background-color: $palete3Color3;
+            }
+        }
+
+        .grid-four {
+            grid-row: 7;
+
+            .palFour_colOne {
+                background-color: $palete4Color1;
+            }
+
+            .palFour_colTwo {
+                background-color: $palete4Color2;
+            }
+
+            .palFour_colThree {
+                background-color: $palete4Color3;
+            }
+        }
+    }
+}
