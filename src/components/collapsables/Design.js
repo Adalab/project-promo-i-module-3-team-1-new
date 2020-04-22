@@ -19,7 +19,7 @@ class Design extends React.Component {
                     <h3>colores</h3>
                     <div className="paletteChoices">
 
-                        <input type="radio" id="paletteOne" /*handleInputValue={this.props.handleInputValue}*/ className="radio_button rb_one" name="palette" value="1" onChange={this.handlePaletteChange} checked={this.props.checked === "1" ? true : false}>
+                        <input type="radio" id="paletteOne"  className="radio_button rb_one" name="palette" value="1" onChange={this.handlePaletteChange} checked={this.props.checked === "1" ? true : false}>
                         </input>
                         <label htmlFor="paletteOne" className="palette-grid grid-one">
                             <div className="palOne_colOne"></div>
@@ -27,14 +27,14 @@ class Design extends React.Component {
                             <div className="palOne_colThree"></div>
                         </label>
 
-                        <input type="radio" id="paletteTwo" /*handleInputValue={this.props.handleInputValue}*/ className="radio_button rb_two" name="palette" value="2" onChange={this.handlePaletteChange} checked={this.props.checked === "2" ? true : false}></input>
+                        <input type="radio" id="paletteTwo"  className="radio_button rb_two" name="palette" value="2" onChange={this.handlePaletteChange} checked={this.props.checked === "2" ? true : false}></input>
                         <label htmlFor="paletteTwo" className="palette-grid grid-two">
                             <div className="palTwo_colOne"></div>
                             <div className="palTwo_colTwo"></div>
                             <div className="palTwo_colThree"></div>
                         </label>
 
-                        <input type="radio" id="paletteThree" /*handleInputValue={this.props.handleInputValue}*/
+                        <input type="radio" id="paletteThree" 
                             className="radio_button rb_three" name="palette" value="3" onChange={this.handlePaletteChange} checked={this.props.checked === "3" ? true : false}></input>
                         <label htmlFor="radioButtonThree" className="palette-grid grid-three">
                             <div className="palThree_colOne"></div>
@@ -42,7 +42,7 @@ class Design extends React.Component {
                             <div className="palThree_colThree"></div>
                         </label>
 
-                        <input type="radio" id="paletteFour" /*handleInputValue={this.props.handleInputValue}*/
+                        <input type="radio" id="paletteFour" 
                             className="radio_button rb_four" name="palette" value="4" onChange={this.handlePaletteChange} checked={this.props.checked === "4" ? true : false}></input>
                         <label htmlFor="radioButtonFour" className="palette-grid grid-four">
                             <div className="palFour_colOne"></div>

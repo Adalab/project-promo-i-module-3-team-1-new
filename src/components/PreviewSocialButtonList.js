@@ -8,7 +8,7 @@ class PreviewSocialButtonList extends React.Component {
   }
   render() {
     return (
-      // card__socialbuttons--list
+      
       <ul id="PreviewSocialButtonList" className={`card__socialbuttons--list ${this.props.value === "1" ? "buttonStyle1" : this.props.value === "2" ? "buttonStyle2" : this.props.value === "3" ? "buttonStyle3" : "buttonStyle4"}`}>
         
         <SocialButton

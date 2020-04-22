@@ -24,6 +24,3 @@ class SocialButton extends React.Component {
 
 export default SocialButton;
 
-
-
-//className="card__socialbuttons--box"
