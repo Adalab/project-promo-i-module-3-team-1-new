@@ -8,7 +8,7 @@ class Share extends React.Component {
     }
 
     fetchCardData(event) {
-        if (this.props.errorName === true && this.props.errorEmail === true && this.props.errorJob === true) {
+        if (this.props.errorName === true && this.props.errorEmail === true && this.props.errorJob === true && this.props.errorLinkedin && this.props.errorGithub) {
             this.props.fetchCardData()
         } else {
             event.preventDefault();
@@ -21,7 +21,7 @@ class Share extends React.Component {
                 <div className="form__open" id="form__share--open">
                     <div className="create-card-button-container">
                         <button id="createCardButton" type="button" className="create-card-button" onClick={this.fetchCardData}
-                            disabled={this.props.errorName === false || this.props.errorEmail === false || this.props.errorJob === false}>
+                            disabled={this.props.errorName === false || this.props.errorEmail === false || this.props.errorJob === false || this.props.errorLinkedin === false || this.props.errorGithub === false }>
                             <p><i className="far fa-address-card"></i>Crear tarjeta</p>
                         </button>
                         <div className="loader">{this.props.isLoading === true ? <Loader/> : ''} </div>

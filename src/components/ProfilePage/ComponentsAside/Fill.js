@@ -27,7 +27,7 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                             />
-                <p className={`text-error ${this.props.errorName === false ? '' : ' newHidden'}`}> *Dinos tu nombre por favor
+                <p className={`text-error ${this.props.errorName === false ? '' : ' newHidden'}`}> *¡Ey! Dinos tu nombre
                 </p>
                 <FillInput
                             htmlFor="job"
@@ -41,7 +41,7 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                 />
-                <p className={`text-error ${this.props.errorJob === false ? '' : 'newHidden'}`}> *Dinos tu profesión por favor
+                <p className={`text-error ${this.props.errorJob === false ? '' : 'newHidden'}`}> *¿A qué te dedicas?
                 </p>
                 <Avatar  inputFile={this.props.inputFile}
                          handleImage={this.props.handleImage}
@@ -83,6 +83,8 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                 />
+                <p className={`text-error ${this.props.errorLinkedin === false ? '' : 'newHidden'}`}> *Queremos ver tu CV
+                </p>
                  <FillInput
                             htmlFor="github"
                             labelName="Github *"
@@ -94,7 +96,8 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                 />
-               
+               <p className={`text-error ${this.props.errorGithub === false ? '' : 'newHidden'}`}> *Queremos ver tus proyectos
+                </p>
                 </div>
             </section>
         );

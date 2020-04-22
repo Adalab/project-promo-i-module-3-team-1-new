@@ -26,6 +26,8 @@ class ProfilePageBody extends React.Component {
       errorName: false,
       errorJob: false,
       errorEmail: false,
+      errorGithub: false,
+      errorLinkedin: false,
       isLoading: false,
       cardURL: '',
       cardSuccess: '',
@@ -115,6 +117,51 @@ class ProfilePageBody extends React.Component {
     }
   }
 
+  validationLinkedin(valueName, valueTarget) {
+    if (valueName === 'linkedin') {
+
+      this.setState(prevState => {
+        let newUserInfo = prevState.userInfo;
+        return {
+          userInfo: { ...newUserInfo, "linkedin": valueTarget }
+        }
+      })
+      if (valueTarget !== '') {
+        this.setState({
+          errorLinkedin: true,
+        })
+      } else {
+        this.setState({
+          errorLinkedin: false,
+        })
+      }
+
+    }
+  }
+
+  validationGithub(valueName, valueTarget) {
+    if (valueName === 'github') {
+
+      this.setState(prevState => {
+        let newUserInfo = prevState.userInfo;
+        return {
+          userInfo: { ...newUserInfo, "github": valueTarget }
+        }
+      })
+      if (valueTarget !== '') {
+        this.setState({
+          errorGithub: true,
+        })
+      } else {
+        this.setState({
+          errorGithub: false,
+        })
+      }
+
+    }
+  }
+
+
   handleImage(photo) {
 
     this.setState(prevState => {
@@ -131,6 +178,9 @@ class ProfilePageBody extends React.Component {
     this.validationEmail(currentTargetName, currentTargetValue)
     this.validationName(currentTargetName, currentTargetValue)
     this.validationJob(currentTargetName, currentTargetValue)
+    this.validationLinkedin(currentTargetName, currentTargetValue)
+    this.validationGithub(currentTargetName, currentTargetValue)
+
     this.setState(prevState => {
       return {
         userInfo: {
@@ -162,6 +212,8 @@ class ProfilePageBody extends React.Component {
         errorName: false,
         errorJob: false,
         errorEmail: false,
+        errorLinkedin: false,
+        errorGithub: false,
         cardURL: '',
         cardSuccess: false,
       userInfo: {
@@ -200,7 +252,10 @@ class ProfilePageBody extends React.Component {
             errorName: data.name !== '' ? true : false,
             errorJob: data.job !== '' ? true : false,
             errorEmail: data.email !== '' ? true : false,
-            cardURL: ''
+            errorGithub: data.github !== '' ? true : false,
+            errorLinkedin: data.linkedin !== '' ? true : false,
+            cardURL: '',
+            cardSuccess: '',
          
         })
     }
@@ -267,6 +322,8 @@ setURL(result){
           errorJob={this.state.errorJob}
           errorName={this.state.errorName}
           errorEmail={this.state.errorEmail}
+          errorLinkedin={this.state.errorLinkedin}
+          errorGithub={this.state.errorGithub}
           cardURL={this.state.cardURL}
           cardSuccess={this.state.cardSuccess}
           fetchCardData={this.fetchCardData}

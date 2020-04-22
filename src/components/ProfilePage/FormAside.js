@@ -55,6 +55,8 @@ constructor(props) {
                       errorName = {this.props.errorName}
                       errorEmail={this.props.errorEmail}
                       errorJob = {this.props.errorJob}
+                      errorGithub = {this.props.errorGithub}
+                      errorLinkedin={this.props.errorLinkedin}
                       handleReset={this.props.handleReset}
 
             />
@@ -72,6 +74,8 @@ constructor(props) {
             <Share  errorName = {this.props.errorName}
                     errorEmail={this.props.errorEmail}
                     errorJob = {this.props.errorJob}
+                    errorGithub = {this.props.errorGithub}
+                    errorLinkedin={this.props.errorLinkedin}
                     cardURL={this.props.cardURL}
                     cardSuccess={this.props.cardSuccess}
                     fetchCardData={this.props.fetchCardData}
