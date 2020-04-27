@@ -20,7 +20,9 @@ class Share extends React.Component {
             <section className="form__sections form__share">
                 <div className="form__open" id="form__share--open">
                     <div className="create-card-button-container">
-                        <button id="createCardButton" type="button" className="create-card-button" onClick={this.fetchCardData}
+                        <button id="createCardButton" type="button" className={`${this.props.mode === true ? 'Darkcreate-card-button' : "create-card-button"}`}                      
+                        
+                        onClick={this.fetchCardData}
                             disabled={this.props.errorName === false || this.props.errorEmail === false || this.props.errorJob === false || this.props.errorLinkedin === false || this.props.errorGithub === false }>
                             <p><i className="far fa-address-card"></i>Crear tarjeta</p>
                         </button>
@@ -28,7 +30,11 @@ class Share extends React.Component {
                     </div>
                    
 
-                    <div className={`form-container created-container ${this.props.cardSuccess === true ? '' : ' newHidden'}`}>
+                    <div className={`${this.props.mode === true ? 'Darkcreated-container' : "created-container"} ${this.props.cardSuccess === true ? '' : ' newHidden'}`}>
+
+                    
+
+                    
                     
                         <p>La tarjeta ha sido creada:</p>
                         <p className="linkResponse">

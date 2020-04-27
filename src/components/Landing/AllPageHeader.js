@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../images/awesome_logo.svg'
+import logo2 from '../../images/logo2.png'
 import { Link } from 'react-router-dom';
 
 class AllPageHeader extends React.Component {
@@ -19,7 +20,7 @@ class AllPageHeader extends React.Component {
           <Link to="/">
             <div className="header-image-container">
               <a href="./index.html" className="link-logo" title="Awesome profile-cards" />
-              <img className="header-awesome-image" src={logo} alt="Awesome profile-cards"
+              <img className="header-awesome-image" src={this.props.mode === true ? logo2 : logo} alt="Awesome profile-cards"
                 title="Awesome profile-cards" />
 
             </div>
