@@ -26,14 +26,21 @@ class ProfilePage extends React.Component {
     render() {
       console.log(this.state.mode)
           return (
-              <div id="profilePage" className="profilePage">
+              <div id="profilePage" 
+              className={`${this.state.mode === true ? 'darkProfilePage' : 'profilePage'}`}>
                   <AllPageHeader
                   handleSwitchMode= {this.handleSwitchMode}
                   mode ={this.state.mode}
                   />
                   
-                  <ProfilePageBody></ProfilePageBody>
-                  <AllPageFooter></AllPageFooter>
+                  <ProfilePageBody
+                  handleSwitchMode= {this.handleSwitchMode}
+                  mode ={this.state.mode}
+                  />
+                  <AllPageFooter
+                  handleSwitchMode= {this.handleSwitchMode}
+                  mode ={this.state.mode}
+                  />
               </div>
           );
     }

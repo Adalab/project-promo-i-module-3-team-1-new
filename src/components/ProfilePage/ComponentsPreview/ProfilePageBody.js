@@ -294,7 +294,7 @@ setURL(result){
 render() {
 
   return (
-    <div id="profilePageBody" className="profilePageBody">
+    <div id="profilePageBody" className={` ${this.props.mode === true ? 'darkProfilePageBody' : 'profilePageBody'}`}>
       <CardPreview valueName={this.state.userInfo.name}
         valueJob={this.state.userInfo.job}
         valueEmail={this.state.userInfo.email}
@@ -305,6 +305,8 @@ render() {
         inputFile={this.state.userInfo.photo}
         handleImage={this.handleImage}
         handleReset={this.handleReset}
+        handleSwitchMode= {this.handleSwitchMode}
+        mode ={this.props.mode}
 
       />
 
