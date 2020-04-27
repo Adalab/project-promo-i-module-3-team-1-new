@@ -4,69 +4,118 @@ $buttonFont: $mainText;
 $nameFont: $previewText;
 
 .profilePage {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    width: 100vw;
-
-    .allPageHeader {
-        height: 110px;
-        width: 100vw;
-        background-color: #ffffff;
-
-        .page_header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    }
 
     .profilePageBody {
-        height: calc(100vh - 170px);
-        /* overflow: scroll; */
         width: 100%;
         background: linear-gradient(to bottom, #f5f5f5, #ffffff 11%);
+        flex: 1 1 auto;
+    }
+}
 
-        @include forTablet {
+@media (min-width: 768px) {
+    .profilePage {
+        
+
+        .profilePageBody {
             padding: 20px 40px;
             display: grid;
             grid-template-columns: 329px 1fr;
             grid-template-rows: 1fr;
             grid-gap: 30px;
 
-            .grid-1 {
+            .grid__element--1 {
                 background: transparent;
                 grid-column: 1/2;
                 grid-row: 1/2;
             }
 
-            .grid-2 {
+            .grid__element--2 {
                 grid-column: 2/3;
                 grid-row: 1/2;
                 border-radius: 5px;
             }
         }
-
-        @include forPc {
-            grid-template-columns: 30vw 1fr;
-        }
-    }
-
-    .allPageFooter {
-        height: 60px;
-        width: 100vw;
-        background-color: #ffffff;
-        border-top: solid 1px $borderLineColor;
-        margin-top:240px;
-        @include forTablet{
-            margin-top:0px;
-        }
     }
 }
+
+@media (min-width: 1200px) {
+    .profilePageBody {
+        grid-template-columns: 30vw 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.allPageHeader {
+    flex: 0 0 110px;
+    background-color: #ffffff;
+
+    .page_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.profilePageBody {
+
+    width: 100%;
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff 11%);
+
+    @include forTablet {
+        padding: 20px 40px;
+        display: grid;
+        grid-template-columns: 329px 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+
+        .grid-1 {
+            background: transparent;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .grid-2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            border-radius: 5px;
+        }
+    }
+
+    @include forPc {
+        grid-template-columns: 30vw 1fr;
+    }
+}
+
+.allPageFooter {
+    width: 100%;
+    background-color: #ffffff;
+    border-top: solid 1px $borderLineColor;
+  flex: 0 0 111px;
+
+    @include forTablet {
+        margin-top: 0px;
+    }
+}
+
 
 //Styles form box
 .formList {
     height: 100%;
-    min-height: 457px;
     width: 100%;
+    padding: 30px;
 
     .form {
         font-family: $mainText;
@@ -119,7 +168,6 @@ $nameFont: $previewText;
 //Styles Preview box
 .cardPreview {
     position: relative;
-    height: 100%;
     min-height: 457px;
     width: 100%;
     background: linear-gradient($previewBackground1, $previewBackground2);
