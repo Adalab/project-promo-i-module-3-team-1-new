@@ -15,6 +15,8 @@ class CardPreview extends React.Component {
       >
         <div id="cardPreview__centeredBox" className="cardPreview__centeredBox" >
           <PreviewResetButton handleReset={this.props.handleReset}
+                              handleSwitchMode= {this.handleSwitchMode}
+                              mode ={this.props.mode}
            />
           <div id="card" className="card" >
 

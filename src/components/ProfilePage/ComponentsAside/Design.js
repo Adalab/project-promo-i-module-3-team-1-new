@@ -14,7 +14,7 @@ class Design extends React.Component {
        
         return (
             <div className="form__open" id="form__design--open">
-                <div className="palettesContainer">
+                <div className={`form__sections ${this.props.mode === true ? 'DarkpalettesContainer' : "palettesContainer"}`}>
                     <h3>colores</h3>
                     <div className="paletteChoices">
 

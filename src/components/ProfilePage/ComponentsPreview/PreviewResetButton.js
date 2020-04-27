@@ -11,7 +11,7 @@ class PreviewResetButton extends React.Component {
     }
     render() {
         return (
-            <button onClick = {this.clickReset} className="previewResetButton" href="#">
+            <button onClick = {this.clickReset} className={`${this.props.mode === true ? 'DarkpreviewResetButton' : 'previewResetButton'}`} href="#">
                 <i className="far fa-trash-alt"></i> reset
             </button>
         );

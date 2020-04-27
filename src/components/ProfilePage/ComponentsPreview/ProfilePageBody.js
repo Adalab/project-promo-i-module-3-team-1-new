@@ -333,6 +333,8 @@ render() {
         fetchCardData={this.fetchCardData}
         handleReset={this.handleReset}
         isLoading={this.state.isLoading}
+        handleSwitchMode= {this.handleSwitchMode}
+        mode ={this.props.mode}
 
       />
 

@@ -12,7 +12,7 @@ class Fill extends React.Component{
    
     render(){
         return(
-            <section  className="form__sections form__fill">
+            <section  className={`form__sections ${this.props.mode === true ? 'Darkform__fill' : "form__fill"}`}>
                 <div className="form__open" id="form__fill--open">
                 
 
@@ -27,7 +27,7 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                             />
-                <p className={`text-error ${this.props.errorName === false ? '' : ' newHidden'}`}> *¡Ey! Dinos tu nombre
+                <p className={`${this.props.mode === true ? 'Darktext-error' : "text-error"} ${this.props.errorName === false ? '' : 'newHidden'}`}> *¡Ey! Dinos tu nombre
                 </p>
                 <FillInput
                             htmlFor="job"
@@ -41,7 +41,7 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                 />
-                <p className={`text-error ${this.props.errorJob === false ? '' : 'newHidden'}`}> *¿A qué te dedicas?
+                <p className={`${this.props.mode === true ? 'Darktext-error' : "text-error"} ${this.props.errorJob === false ? '' : 'newHidden'}`}> *¿A qué te dedicas?
                 </p>
                 <Avatar  inputFile={this.props.inputFile}
                          handleImage={this.props.handleImage}
@@ -58,7 +58,7 @@ class Fill extends React.Component{
                             required
                             onChange={this.validationEmail}
                 />      
-                <p className={`text-error ${this.props.errorEmail === false ? '' : 'newHidden'}`}> *Dinos tu email por favor
+                <p className={`${this.props.mode === true ? 'Darktext-error' : "text-error"} ${this.props.errorEmail === false ? '' : 'newHidden'}`}> *Dinos tu email por favor
                 </p>
 
                  <FillInput
@@ -83,7 +83,7 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                 />
-                <p className={`text-error ${this.props.errorLinkedin === false ? '' : 'newHidden'}`}> *Queremos ver tu CV
+                <p className={`${this.props.mode === true ? 'Darktext-error' : "text-error"} ${this.props.errorLinkedin === false ? '' : 'newHidden'}`}> *Queremos ver tu CV
                 </p>
                  <FillInput
                             htmlFor="github"
@@ -96,7 +96,7 @@ class Fill extends React.Component{
                             handleInputValue={this.props.handleInputValue}
                             required
                 />
-               <p className={`text-error ${this.props.errorGithub === false ? '' : 'newHidden'}`}> *Queremos ver tus proyectos
+               <p className={`${this.props.mode === true ? 'Darktext-error' : "text-error"} ${this.props.errorGithub === false ? '' : 'newHidden'}`}> *Queremos ver tus proyectos
                 </p>
                 </div>
             </section>
