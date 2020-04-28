@@ -13,6 +13,8 @@
 :octocat:| Patricia Ramos | [GitHub](https://github.com/patriciaramosf) | En búsqueda del ternario imposible
 
 :octocat:| Maria Mateo | [GitHub](https://github.com/memematvaz) | Zoom master
+
+:octocat: |Elvira | ahora no encontramos tu Github pero mereces mención por todo lo que nos has ayudado GRACIAS!!! <3
   
 
 
