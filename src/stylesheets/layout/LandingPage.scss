@@ -1,151 +1,182 @@
 //General Structure
 
-.landingPage{
-    height: 100vh;
-    width: 100vw;
-    .landingPageBody{
-        height: calc(100vh - 60px);
-        width: 100vw;
-        background-color: #F5F5F5;
-    }
-    .allPageFooter{
-        height: 60px;
-        width: 100vw;
-        background-color: #FFFFFF;
-        border-top: solid 1px $borderLineColor;
-    }
-}
+
+
 .page_main {
-    background: #f5f5f5;
-    width: 100%;
-    height: calc(100vh - 110px);
-    margin: auto;
-    padding-right: 35px;
-    padding-left: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    @include forTablet {
+  background: #f5f5f5;
+  width: 100%;
+  height: calc(100vh - 110px);
+  margin: auto;
+  padding-right: 35px;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.awesome-image-container {
+  padding-top: 100px;
+}
+
+.awesome-image {
+  width: 250px;
+  height: 63px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: $smallLandingTitle;
+  font-family: $landingTitle;
+  font-weight: 900;
+  color: $secondaryColor;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.text {
+  font-size: $smallLandingText;
+  font-family: $mainText;
+  color: $formText;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: normal;
+  width: 265px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  border: solid 2px;
+  border-color: rgba(225, 115, 52, 0.21);
+  border-radius: 4px;
+  width: 268px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.design-icon,
+.fill-icon,
+.share-icon {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $secondaryColor;
+  font-size: $smallIconsLanding;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  font-size: $smallLandingText;
+  font-family: $mainText;
+  color: $primaryColor;
+  margin-top: 0;
+  padding-top: 2%;
+}
+
+.button-container {
+  padding-top: 20px;
+
+}
+
+.button {
+  font-size: $LargeLandingText;
+  font-family: $mainText;
+  color: white;
+  background: #438792;
+  text-transform: uppercase;
+  border-radius: 21px;
+  width: 129px;
+  height: 42px;
+  margin-bottom: 30px;
+  border-style: solid;
+}
+
+
+@media (min-width: 768px) {
+  .page_main {
+   
       padding-top: 150px;
       height: calc(100vh - 60px);
-    }
-   
-  }
+    
   
+  }
+ 
   .content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @include forTablet {
-    flex-grow: 2;
-    }
+  
+      flex-grow: 0.5;
+    
+  
+  }
+ 
+  .awesome-image-container {
+  
+      padding-top: 0;
     
   }
-  .awesome-image-container {
-    padding-top: 100px;
-  
-    @include forPc {
-    padding-top: 0;
-     }
-  }
+ 
   .awesome-image {
-    width: 250px;
-    height: 63px;
-    margin-bottom: 20px;
-    @include forTablet {
+   
       width: 419px;
       height: 105px;
-    }
+    
   }
+
   .title {
-    font-size: $smallLandingTitle;
-    font-family: $landingTitle;
-    font-weight: 900;
-    color: $secondaryColor;
-    margin-bottom: 5px;
-    text-align: center;
-    @include forTablet {
+  
       margin-bottom: 5px;
       font-size: $largeLandingTitle;
-    }
+    
   }
+
   .text {
-    font-size: $smallLandingText;
-    font-family: $mainText;
-    color: $formText;
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: normal;
-    width: 265px;
-    @include forTablet {
+ 
       margin-top: 0;
       font-size: $LargeLandingText;
       width: 330px;
-    }
-  }
-  .icon-container {
-    display: flex;
-    flex-direction: row;
-    border: solid 2px;
-    border-color: rgba(225, 115, 52, 0.21);
-    border-radius: 4px;
-    width: 268px;
-    justify-content: space-around;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
     
-    @include forTablet {
+  }
+
+  .icon-container {
+
       width: 325px;
       height: 70px;
       padding-bottom: 80px;
-    }
+    
   }
-    .design-icon, .fill-icon, .share-icon {
-      margin-top: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: $secondaryColor;
-      font-size: $smallIconsLanding;
-  
-        @include forTablet {
-        font-size: $largeIconsLanding;
-        }
-      }
-  
+
+
+  .design-icon,
+  .fill-icon,
+  .share-icon {
+   
+      font-size: $largeIconsLanding;
+    
+  }
+
   .icon1,
   .icon2,
   .icon3 {
-    font-size: $smallLandingText;
-    font-family: $mainText;
-    color: $primaryColor;
-    margin-top: 0;
-    padding-top: 2%;
-    @include forTablet {
-      font-size: $LargeLandingText;
-      text-align: center;
-    }
-  }
-  .button-container {
-    padding-top: 20px;
-  
-    @include forTablet {
-      padding-bottom: 60px;
-    }
-    
-  }
-  .button {
+
     font-size: $LargeLandingText;
-    font-family: $mainText;
-    color: white;
-    background: #438792;
-    text-transform: uppercase;
-    border-radius: 21px;
-    width: 129px;
-    height: 42px;
-    margin-bottom: 30px;
-    border-style: solid;
+    text-align: center;
   }
+
+
+
+  .button-container {
+
+    padding-bottom: 60px;
+  }
+
+}

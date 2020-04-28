@@ -7,7 +7,7 @@ class AllPageFooter extends React.Component {
     }
     render() {
           return (
-              <div id="allPageFooter" className="allPageFooter">
+              <div id="allPageFooter" className={`${this.props.mode === true ? 'darkAllPageFooter' : 'allPageFooter'}`}>
                 <footer className="page_footer">
                     <div className="footer-copyright">
                         <img className="logo-unicorn" src={logoCo} alt="logo-localUnicorns"/>

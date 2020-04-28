@@ -1,0 +1,639 @@
+//BUTTON
+.button-container {
+    padding: 0px;
+    margin-right: 40px;
+
+    .switch {
+
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked+.slider {
+        background-color: #005496;
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px #005496;
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
+
+
+
+
+//PROFILE PAGE
+
+.darkProfilePage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #0A244D;
+
+    .darkProfilePageBody {
+        width: 100%;
+        background: linear-gradient(to bottom, #081d3e, #0A244D 11%);
+        flex: 1 1 auto;
+    }
+
+    .allPageHeader {
+        flex: 0 0 110px;
+        background-color: #0A244D;
+
+        .page_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-image-container {
+            background-color: #0A244D;
+            width: 100%;
+            height: auto;
+            margin: 0;
+
+            display: flex;
+            justify-content: center;
+
+            @include forTablet {
+                justify-content: flex-start;
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .darkProfilePage {
+
+
+        .darkProfilePageBody {
+            padding: 20px 40px;
+            display: grid;
+            grid-template-columns: 329px 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 30px;
+
+            .grid__element--1 {
+                background: transparent;
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            .grid__element--2 {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .darkProfilePageBody {
+        grid-template-columns: 30vw 1fr;
+    }
+}
+
+
+
+.darkProfilePageBody {
+
+    width: 100%;
+    background: linear-gradient(to bottom, #081d3e, #0A244D 11%);
+
+    @include forTablet {
+        padding: 20px 40px;
+        display: grid;
+        grid-template-columns: 329px 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+
+        .grid-1 {
+            background: transparent;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .grid-2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            border-radius: 5px;
+        }
+    }
+
+    @include forPc {
+        grid-template-columns: 30vw 1fr;
+    }
+}
+
+.darkAllPageFooter {
+    width: 100%;
+    background-color: #0A244D;
+    border-top: solid 1px $borderLineColor;
+    flex: 0 0 111px;
+
+    @include forTablet {
+        margin-top: 0px;
+    }
+}
+
+
+//Styles form box
+.DarkcollapseTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .form__title {
+        font-family: $mainText;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: white;
+        margin: 10px 0;
+    }
+
+    .form__arrow--collapse {
+        transform: rotate(180deg);
+    }
+
+    .form__icon {
+        margin-right: 10px;
+        color: #b90082;
+
+    }
+
+    .form__arrow--design,
+    .form__arrow--fill,
+    .form__arrow--share {
+        color: white;
+        border: none;
+        background-color: transparent;
+        font-weight: lighter;
+        font-size: $mainTitleSize;
+    }
+}
+
+.rotate {
+
+    transform: rotate(180deg);
+    transition: all 0.1s ease 0.1s;
+
+    .Darkicon {
+        color: #b90082;
+    }
+}
+
+//Styles Preview box
+.darkCardPreview {
+    position: relative;
+    min-height: 457px;
+    width: 100%;
+    background: linear-gradient(#005496, #032c4d);
+}
+
+.cardPreview{
+    &__centeredBox {
+      @include centerAll;
+  
+      .DarkpreviewResetButton{
+        width: 75px;
+        height: 30px;
+        background-color: transparent;
+        border: 1px solid $whiteColor;
+        border-radius: 15px;
+        font-family: $buttonFont;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        color: white;
+        margin-bottom: 20px;
+      }
+  
+      .card {
+        width: 240px;
+        height: 329px;
+        background-color: white;
+        padding-top: 21px;
+        padding-bottom: 12px;
+        box-shadow: 0 1px 10px 0 $shadowColor;
+  
+        .card__profileInfo--box {
+          width: 100%;
+          height: 42px;
+          padding-left: 15px;
+          margin-bottom: 10px;
+  
+          .card__profileInfo--name {
+            font-family: $nameFont;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 2px;
+          }
+  
+          .card__profileInfo--job {
+            font-family: $nameFont;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+  
+        .card__avatar--box {
+          width: 100%;
+          height: 200px;
+          background-color: $previewBackground2;
+          background-position: center;
+          background-size: cover;
+          margin-bottom: 10px;
+        }
+  
+        .card__socialbuttons--list {
+          padding-left: 20px;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+  
+          .card__socialbuttons--box {
+            display: inline-block;
+            position: relative;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+  
+            .hidden {
+              display: none;
+            }
+  
+            .icon {
+              @include centerAll;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Darkform__fill{
+    margin-bottom: 0px;
+      
+  
+    label {
+        color: white;
+  
+        span {
+            color: white;
+        }
+    }
+  
+    ::placeholder {
+        color: $placeholderText;
+        padding: 5px;
+    }
+  
+    input {
+        border: 1px solid #b90082;
+        margin: 10px 0 10px 0px;
+        height: 30px;
+        width: 100%;
+        
+  
+    }
+    .form__flex {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      line-height: 20px;
+      
+  }
+  
+  .photo__upload {
+      display: flex;
+      flex-direction: row;
+  }
+  .photo__upload--btn {
+    width: 140px;
+    height: 30px;
+    background-color: #b90082;
+    color: white;
+    font-family: $mainText;
+    font-size: 14px;
+    line-height: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.20);
+    margin: 10px 0 20px;
+  }
+  
+  .thumbnail {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b90082;
+    box-sizing: border-box;
+    margin: 10px 0 0 20px;
+  
+  }
+  } 
+  
+  .js__photo--file {
+  
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+  }
+  
+  .Darktext-error{
+    color:#b90082;
+    padding-bottom: 25px;
+  }
+  .DarkpalettesContainer{
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+  
+      & h3 {
+          
+          text-transform: uppercase;
+          color: white;
+          padding: 0;
+          padding-top: 0.75rem;
+          padding-left: 1.3125rem;
+          font-size: 0.875rem;
+          grid-column: 1/2;
+          font-family: $mainText;
+          font-style: inherit;
+         
+  
+          @media all and (min-width: $tablet) {
+              padding-left: 0;
+          }
+      }
+      .paletteChoices {
+          grid-column: 2/3;
+          display: grid;
+          grid-template-columns: 30px 90px;
+          grid-template-rows: repeat(4, 1.5625rem 1.25rem);
+          justify-content: end;
+          padding-top: 0.9375rem;
+  
+          .radio_button {
+              justify-self: center;
+              align-self: center;
+          }
+          .rb_one {
+              grid-column: 1/2;
+          }
+  
+          .rb_two {
+              grid-row: 3;
+              grid-column: 1/2;
+          }
+  
+          .rb_three {
+              grid-row: 5;
+              grid-column: 1/2;
+          }
+  
+          .rb_four {
+              grid-row: 7;
+              grid-column: 1/2;
+          }
+  
+          .palette-grid {
+              display: grid;
+              grid-template-columns: repeat(3, 30px);
+              grid-template-rows: auto;
+              justify-content: end;
+              grid-column: 2/3;
+          }
+  
+          .grid-one {
+              grid-row: 1;
+  
+              .palOne_colOne {
+                  background-color: $formText;
+              }
+  
+              .palOne_colTwo {
+                  background-color: $palete1Color2;
+              }
+  
+              .palOne_colThree {
+                  background-color: $borderColor;
+              }
+          }
+  
+          .grid-two {
+              grid-row: 3;
+  
+              .palTwo_colOne {
+                  background-color: $palete2Color1;
+              }
+  
+              .palTwo_colTwo {
+                  background-color: $palete2Color2;
+              }
+  
+              .palTwo_colThree {
+                  background-color: $palete2Color3;
+              }
+          }
+          .grid-three {
+              grid-row: 5;
+  
+              .palThree_colOne {
+                  background-color: $palete3Color1;
+              }
+  
+              .palThree_colTwo {
+                  background-color: $palete3Color2;
+              }
+  
+              .palThree_colThree {
+                  background-color: $palete3Color3;
+              }
+          }
+  
+          .grid-four {
+              grid-row: 7;
+  
+              .palFour_colOne {
+                  background-color: $palete4Color1;
+              }
+  
+              .palFour_colTwo {
+                  background-color: $palete4Color2;
+              }
+  
+              .palFour_colThree {
+                  background-color: $palete4Color3;
+              }
+          }
+      }
+  }
+
+  // Share
+
+.create-card-button-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+  
+    .Darkcreate-card-button {
+      width: 200px;
+      height: 50px;
+      background-color: #B90082;
+      color: white;
+      border-radius: 12px;
+  
+      &:hover {
+        color: #B90082;
+        background-color: white;
+  
+        p {
+          color: #B90082;
+        }
+  
+        i {
+          color: #B90082;
+        }
+  
+      }
+  
+      p {
+        text-transform: uppercase;
+        font-family: $mainText;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+  
+        i {
+          color: white;
+          margin-right: 10px;
+        }
+  
+      }
+    }
+  
+    .Darkcreate-card-button:disabled {
+      background: grey !important;
+      pointer-events: none;
+    }
+  
+  }
+  
+  //Twitter button
+  
+  .Darkcreated-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    border-top: 1px solid $borderLineColor;
+  
+    p {
+      padding: 5px 0;
+      font-size: 18px;
+      color: $primaryColor;
+      font-family: $mainText;
+    }
+  
+    a {
+      display: block;
+      color: #B90082;
+      padding-bottom: 10px;
+      padding-top: 5px;
+      font-family: $mainText;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  
+    .share-twitter-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: inline-block;
+      background-color: #00a0f5;
+      color: white;
+      border-radius: 3px;
+      width: 180px;
+      height: 30px;
+      margin: 0 auto 0 auto;
+      border: 0;
+      font-family: $mainText;
+      font-weight: normal;
+      font-size: 14px;
+  
+      .fab {
+        margin-right: 5px;
+        font-size: $mainTitleSize;
+      }
+  
+  
+    }
+  }
+  

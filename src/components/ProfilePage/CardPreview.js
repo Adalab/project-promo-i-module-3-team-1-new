@@ -11,9 +11,12 @@ class CardPreview extends React.Component {
   render() {
     
     return (
-      <div id="cardPreview" className="cardPreview grid-2">
+      <div id="cardPreview" className={`grid-2 ${this.props.mode === true ? 'darkCardPreview' : 'cardPreview'}`}
+      >
         <div id="cardPreview__centeredBox" className="cardPreview__centeredBox" >
           <PreviewResetButton handleReset={this.props.handleReset}
+                              handleSwitchMode= {this.handleSwitchMode}
+                              mode ={this.props.mode}
            />
           <div id="card" className="card" >
 
