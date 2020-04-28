@@ -8,11 +8,11 @@
 
 ## Equipo
 
-🚀 | Maria Blanco | [GitHub](https://github.com/mablancoalvarez) 
+:octocat:| Maria Blanco | [GitHub](https://github.com/mablancoalvarez) 
 
-💻 | Patricia Ramos | [GitHub](https://github.com/patriciaramosf)
+:octocat:| Patricia Ramos | [GitHub](https://github.com/patriciaramosf)
 
-:octocat: | Maria Mateo | [GitHub](https://github.com/memematvaz) 
+:octocat:| Maria Mateo | [GitHub](https://github.com/memematvaz) 
   
 
 
@@ -33,14 +33,13 @@
 - [Recursos](#recursos-interesantes)
 
 
-
 ## :dart: Objetivos 
 
 * Responsive Web
 * Estructura por componentes
 * Trabajar con código heredado y mejorarlo
 * Validación de formularios
-* Maquetación y estilos en React
+* Maquetación en React y estilos en Sass.
 * Creación link a través de API Twitter
 * Funcionalidades para que el usuario personalice su tarjeta.
 
@@ -148,12 +147,13 @@ Esta metodología nos ha permitido cumplir con los objetivos propuesto a la vez 
 ### :wrench: Tech 
 
 * [ReactJS] (https://reactjs.org/docs/getting-started.html) React Docs!
+* [Sass] (https://sass-lang.com/) Sass Docs.
 * [Visual Studio Code] - awesome web-based text editor
 * [Dillinger] -(https://dillinger.io/) Markdown parser done right. Fast and easy to extend.
 * [Trello] - Trello
 * [Código Heredado](http://beta.adalab.es/project-promo-i-module-2-team-4-afternoon/)
 * [GIT]- Control de versiones
-* [GitHub]
+* [GitHub] (https://guides.github.com/features/mastering-markdown/)
 * [Twitter Deveoper](https://developer.twitter.com/en)
 
 
