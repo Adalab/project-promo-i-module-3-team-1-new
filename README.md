@@ -18,8 +18,17 @@
 
 ![default-avatar](https://user-images.githubusercontent.com/60300665/80500836-fa7b1680-896e-11ea-9135-0afb10f9d1ab.gif)
 
+### Repository index
+- [Objetivos](#objetivos)
+- [Estructura del proyecto](#estructura)
+- [Demo](#demo)
+- [Mejoras propuestas](#mejoras)
+- [Metodología de trabajo](#metodologia)
+- [Tecnologías usadas](#tecnologías)
+- [Instalación](#instalación)
 
-## :dart: Objetivos 
+
+# <a name="objetivos"></a> :dart: Objetivos 
 
 * Responsive Web
 * Estructura por componentes
@@ -29,7 +38,7 @@
 * Creación link a través de API Twitter
 * Funcionalidades para que el usuario personalice su tarjeta.
 
-
+# <a name="estructura"></a>
 ##  :open_file_folder: Estructura del proyecto 
 
 ```
@@ -98,8 +107,8 @@
     └── index.js 
  ```
  
-
-## :iphone: :computer:  Demo 
+# <a name="demo"></a>
+## :iphone: :computer: Demo 
 
 -  [Awesome Profile Cards]
 
@@ -110,6 +119,7 @@
 <img width="1440" alt="Captura de pantalla 2020-04-28 a las 16 31 55" src="https://user-images.githubusercontent.com/60300665/80501006-34e4b380-896f-11ea-8c57-ab40f19e1be8.png">
 <img width="1438" alt="Captura de pantalla 2020-04-28 a las 16 33 34" src="https://user-images.githubusercontent.com/60300665/80501011-3615e080-896f-11ea-891b-81aec14c8e08.png">
 
+# <a name="mejoras"></a>
 ## :sparkles:Mejoras propuestas al cliente
 
 * :cyclone: Loader - De esta forma el cliente sabe que la web está cargando, mejora la experiencia del usuario.
@@ -118,7 +128,7 @@
 
 * :zap: Mejoras visuales - Color en los collapsables para destacar su función.
 
-
+# <a name="metodologia"></a>
 ## :busts_in_silhouette: Metodología de trabajo
 ### Scrum
 
@@ -132,7 +142,8 @@
 
 Esta metodología nos ha permitido cumplir con los objetivos propuesto a la vez que evolucionar con nuestro aprendizaje.
 
-## :wrench: Tech 
+# <a name="tecnologías"></a>
+## :wrench: Tecnologías usadas 
 
 * [ReactJS] (https://reactjs.org/docs/getting-started.html) React Docs!
 * [Sass] (https://sass-lang.com/) Sass Docs.
@@ -144,7 +155,7 @@ Esta metodología nos ha permitido cumplir con los objetivos propuesto a la vez 
 * [GitHub] (https://guides.github.com/features/mastering-markdown/)
 * [Twitter Deveoper](https://developer.twitter.com/en)
 
-
+# <a name="instalación"></a>
 ## :mag_right:Instalación 
 
 
