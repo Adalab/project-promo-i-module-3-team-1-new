@@ -3,9 +3,6 @@ import SocialButton from './SocialButton.js';
 
 
 class PreviewSocialButtonList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       
@@ -49,6 +46,4 @@ PreviewSocialButtonList.defaultProps = {
   linkedinuser: '',
   githubuser: ''
 }
-
-
 export default PreviewSocialButtonList;

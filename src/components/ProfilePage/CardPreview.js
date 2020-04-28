@@ -5,18 +5,16 @@ import PreviewAvatarBox from './ComponentsPreview/PreviewAvatarBox.js';
 import PreviewSocialButtonList from './ComponentsPreview/PreviewSocialButtonList.js';
 
 class CardPreview extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     
     return (
-      <div id="cardPreview" className="cardPreview grid-2">
+      <div id="cardPreview" className={`grid-2 ${this.props.mode === true ? 'darkCardPreview' : 'cardPreview'}`}>
         <div id="cardPreview__centeredBox" className="cardPreview__centeredBox" >
           <PreviewResetButton handleReset={this.props.handleReset}
+                              handleSwitchMode= {this.handleSwitchMode}
+                              mode ={this.props.mode}
            />
           <div id="card" className="card" >
-
             <PreviewProfileInfo
               value={this.props.checked}
               name={this.props.valueName}
@@ -25,7 +23,6 @@ class CardPreview extends React.Component {
             <PreviewAvatarBox
             handleImage = {this.props.handleImage}
             inputFile={this.props.inputFile}
-            
             />
            
             <PreviewSocialButtonList  value={this.props.checked}

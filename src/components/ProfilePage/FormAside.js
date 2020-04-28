@@ -8,10 +8,6 @@ import PropTypes from 'prop-types';
 
 class FormAside extends React.Component {
 
-constructor(props) {
-    super(props);
-    
-  }
 
   render() {
     return (
@@ -23,12 +19,16 @@ constructor(props) {
                             activePanel = {this.props.activePanel}
                             icon = 'form__icon far fa-object-ungroup'
                             rotatearrow = {this.props.rotatearrow}
+                            handleSwitchMode= {this.handleSwitchMode}
+                            mode ={this.props.mode}
 
           >
         
             <Design 
                   checked = {this.props.valuepalette}
                   handleInputValue={this.props.handleInputValue}
+                  handleSwitchMode= {this.handleSwitchMode}
+                  mode ={this.props.mode}
                   
                   
             />
@@ -40,6 +40,8 @@ constructor(props) {
                             activePanel = {this.props.activePanel}
                             icon = 'form__icon far fa-keyboard'
                             rotatearrow = {this.props.rotatearrow}
+                            handleSwitchMode= {this.handleSwitchMode}
+                            mode ={this.props.mode}
 
           >
           
@@ -55,7 +57,11 @@ constructor(props) {
                       errorName = {this.props.errorName}
                       errorEmail={this.props.errorEmail}
                       errorJob = {this.props.errorJob}
+                      errorGithub = {this.props.errorGithub}
+                      errorLinkedin={this.props.errorLinkedin}
                       handleReset={this.props.handleReset}
+                      handleSwitchMode= {this.handleSwitchMode}
+                      mode ={this.props.mode}
 
             />
           </CollapsableItem>
@@ -66,16 +72,22 @@ constructor(props) {
                           activePanel = {this.props.activePanel}
                           icon = 'form__icon fas fa-share-alt'
                           rotatearrow = {this.props.rotatearrow}
+                          handleSwitchMode= {this.handleSwitchMode}
+                          mode ={this.props.mode}
 
         >
         
             <Share  errorName = {this.props.errorName}
                     errorEmail={this.props.errorEmail}
                     errorJob = {this.props.errorJob}
+                    errorGithub = {this.props.errorGithub}
+                    errorLinkedin={this.props.errorLinkedin}
                     cardURL={this.props.cardURL}
                     cardSuccess={this.props.cardSuccess}
                     fetchCardData={this.props.fetchCardData}
                     isLoading = {this.props.isLoading}
+                    handleSwitchMode= {this.handleSwitchMode}
+                    mode ={this.props.mode}
               />
         </CollapsableItem>
 
@@ -88,7 +100,7 @@ FormAside.propTypes = {
 valueName:PropTypes.string.isRequired,
 valueJob:PropTypes.string.isRequired,
 valueEmail: PropTypes.string.isRequired,
-valuePhone: PropTypes.number,
+valuePhone: PropTypes.string,
 valueLinkedin:PropTypes.string.isRequired,
 valueGithub:PropTypes.string.isRequired,
 }

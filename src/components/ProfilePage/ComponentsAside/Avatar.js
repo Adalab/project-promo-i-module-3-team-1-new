@@ -17,7 +17,6 @@ class Avatar extends React.Component {
     fr.readAsDataURL(myFile);
   }
 
-
   writeImage() {
     this.setState({
       photo: fr.result
