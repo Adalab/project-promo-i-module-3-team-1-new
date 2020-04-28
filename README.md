@@ -178,7 +178,7 @@ $ npm start
 
 ## :round_pushpin:
 
-Por último visita nuestra web y consigue tu tarjeta!
+Por último visita nuestra web y consigue tu tarjeta aquí!
 
 (https://github.com/Adalab/project-promo-i-module-2-team-2-afternoon)
 
