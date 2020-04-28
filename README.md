@@ -141,7 +141,7 @@ Necesitarás instalar  📋 [Node.js](https://nodejs.org/) para trabajar con est
 
 1. Descarga o clona el repositorio
 ```sh
-$ git clone https://github.com/Adalab/project-promo-i-module-3-team-3-afternoon
+$ git clone https://github.com/Adalab/project-promo-i-module-3-team-1-new
 ```
 2. Abre el proyecto en tu editor de codigo (Visual Sudio Code, Atom, Brackets...)
 
@@ -153,29 +153,11 @@ $ npm install
 ```sh
 $ npm start
 ```
-```
-
-## Especificaciones
-
-- Uso avanzado de formularios HTML
-
-- Maquetación usando CSS avanzado, como flex y grid :sparkles:
-
-- Uso de mediaqueries para que el diseño sea adaptable al dispositivo usando la estrategia mobile first
-
-- Gestión de eventos en el navegador (al hacer click, pasa x, etc.)
-
-- Acceso y envío de datos a un servidor :sparkles:
-
-- Almacenamiento en local usando LocalStorage
-
-- Uso de git para el control de versiones del proyecto
-
-- Publicación del resultado en Internet usando GitHub Pages :sparkles:
 
 ## Metodología de trabajo
 ### Scrum
-- Para la realización de este proyecto trabajamos en 2 sprints de 7 sesiones cada uno
+
+- Para la realización de este proyecto trabajamos en 2 sprints.
 
 - Dedicamos el primer día a la planificación del sprint y el resto a trabajar en el desarrollo del proyecto. :ok_hand:
 
