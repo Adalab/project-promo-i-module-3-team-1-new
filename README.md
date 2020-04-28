@@ -16,7 +16,7 @@
   
 
 
-![default-avatar](https://user-images.githubusercontent.com/60300665/80468041-fafbb900-893e-11ea-8c79-c9e0ca50e377.gif)
+![default-avatar](https://user-images.githubusercontent.com/60300665/80500836-fa7b1680-896e-11ea-9135-0afb10f9d1ab.gif)
 
 ## Tabla de contenidos
 - [Demo](#demo)
