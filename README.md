@@ -36,11 +36,25 @@
 
 ## Objetivos
 
-* [Responsive Web]
+* Responsive Web
+* Trabajar con código heredado y mejorarlo
+* Validación de formularios
+* Maquetación y estilos en React
+* Estructura por componentes
+
+
+## Mejoras propuestas al cliente
+
+* Loader - De esta forma el cliente sabe que la web está cargando, mejora la experiencia del usuario.
+
+* DarkMode - Alarga la batería de nuestros dispositivos, menor impacto en la vista.
+
+* Mejoras visuales - Color en los collapsables para destacar su función.
 
 
 
-## Instalación
+## Mejoras propuestas al cliente 
+
 
 Necesitarás instalar [Node.js](https://nodejs.org/) y [Gulp](https://gulpjs.com) para trabajar con este repositorio, luego:
 
