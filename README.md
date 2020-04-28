@@ -37,11 +37,12 @@
 ## :dart: Objetivos 
 
 * Responsive Web
+* Estructura por componentes
 * Trabajar con código heredado y mejorarlo
 * Validación de formularios
 * Maquetación y estilos en React
-* Estructura por componentes
-
+* Creación link a través de API Twitter
+* Funcionalidades para que el usuario personalice su tarjeta.
 
 
 ##  :open_file_folder: Estructura del proyecto 
@@ -122,8 +123,6 @@
 <img width="1440" alt="Captura de pantalla 2020-04-28 a las 16 31 55" src="https://user-images.githubusercontent.com/60300665/80501006-34e4b380-896f-11ea-8c57-ab40f19e1be8.png">
 <img width="1438" alt="Captura de pantalla 2020-04-28 a las 16 33 34" src="https://user-images.githubusercontent.com/60300665/80501011-3615e080-896f-11ea-891b-81aec14c8e08.png">
 
-
-
 ## Mejoras propuestas al cliente
 
 * :cyclone: Loader - De esta forma el cliente sabe que la web está cargando, mejora la experiencia del usuario.
@@ -146,19 +145,17 @@
 
 Esta metodología nos ha permitido cumplir con los objetivos propuesto a la vez que evolucionar con nuestro aprendizaje.
 
-### GitHub
-Control de versiones :bookmark:
-- Ramas: A lo largo del proyecto hemos trabajado creando una rama permanente para cada scprint, y multiples ramas puntuales para crear o modificar algunas funcionalidades. 
+### :wrench: Tech 
 
-- Pull Request y revisión de código:twisted_rightwards_arrows: : para este proyecto hemos usado la funcionalidad de Pull Request que consiste en que un equipo crea la rama, ejecuta la tarea y la sube a la rama remota, pero no la fusiona todavía, antes crea un Pull Request. De esta forma un equipo o algún miembro del equipo se encarga de revisar el código y dar el visto bueno a la fusión. 
+* [ReactJS] (https://reactjs.org/docs/getting-started.html) React Docs!
+* [Visual Studio Code] - awesome web-based text editor
+* [Dillinger] -(https://dillinger.io/) Markdown parser done right. Fast and easy to extend.
+* [Trello] - Trello
+* [Código Heredado](http://beta.adalab.es/project-promo-i-module-2-team-4-afternoon/)
+* [GIT]- Control de versiones
+* [GitHub]
+* [Twitter Deveoper](https://developer.twitter.com/en)
 
- 
-## Contribuye
-1.  Haz un Fork 
-2.  Crea una nueva rama (`git checkout -b feature/fooBar`)
-3.  Haz commit con los cambios (`git commit -am 'Add some fooBar'`)
-4.  Haz push en tu rama (`git push origin feature/fooBar`)
-5.  Crea un nuevo Pull Request
 
 ## Instalación :mag_right:
 
