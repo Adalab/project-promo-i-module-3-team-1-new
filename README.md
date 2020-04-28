@@ -175,3 +175,10 @@ $ npm install
 ```sh
 $ npm start
 ```
+
+## :round_pushpin:
+
+Por último visita nuestra web y consigue tu tarjeta!
+
+(https://github.com/Adalab/project-promo-i-module-2-team-2-afternoon)
+
