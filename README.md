@@ -1,12 +1,12 @@
 
-<h3 align="center">Hola! Somos <a href="" target="_blank">React Rocket :rocket:  </a></h3>
+<h3 align="center">Hola! Somos React Rocket :rocket:  </a></h3>
 
  :speech_balloon: un grupo de programadoras basadas en Madrid, con conocimientos en HTML5,CSS3(SASS),JAVASCRIPT Y REACT!
  => En este repositorio podéis encontrar nuestro último proyecto hecho en REACT JS , un creador de tarjetas personalizadas que además podrás compartir en Twitter 🙌
 
 
 
-## Equipo
+## Desarrolladoras
 
 :octocat:| Maria Blanco | [GitHub](https://github.com/mablancoalvarez) 
 
