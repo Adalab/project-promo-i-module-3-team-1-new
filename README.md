@@ -1,18 +1,18 @@
 
 <h3 align="center">Hola! Somos React Rocket :rocket:  </a></h3>
 
- :speech_balloon: Un grupo de programadoras basadas en Madrid, con conocimientos en HTML5,CSS3(SASS),JAVASCRIPT Y REACT!
+ :speech_balloon: Un grupo de programadoras residentes en Madrid, con conocimientos en HTML5, CSS3(SASS), JAVASCRIPT Y REACT!
  => En este repositorio podéis encontrar nuestro último proyecto hecho en REACT JS , un creador de tarjetas personalizadas que además podrás compartir en Twitter 🙌
 
 
 
 ## Desarrolladoras
 
-:octocat:| Maria Blanco | [GitHub](https://github.com/mablancoalvarez) 
+:octocat:| Maria Blanco | [GitHub](https://github.com/mablancoalvarez) | La coach del equipo, tiene fuentes que dicen que todo irá bien...
 
-:octocat:| Patricia Ramos | [GitHub](https://github.com/patriciaramosf)
+:octocat:| Patricia Ramos | [GitHub](https://github.com/patriciaramosf) | En búsqueda del ternario imposible
 
-:octocat:| Maria Mateo | [GitHub](https://github.com/memematvaz) 
+:octocat:| Maria Mateo | [GitHub](https://github.com/memematvaz) | Zoom master
   
 
 
@@ -110,7 +110,7 @@
 # <a name="demo"></a>
 ## :iphone: :computer: Demo 
 
--  [Awesome Profile Cards]
+-  [Awesome Profile Cards](http://beta.adalab.es/project-promo-i-module-3-team-1-new/#/)
 
 ![animals](https://user-images.githubusercontent.com/60300665/80508130-ef78b400-8977-11ea-8e7b-65aecb969ce6.gif)
 
@@ -180,5 +180,5 @@ $ npm start
 
 Por último visita nuestra web y consigue tu tarjeta aquí!
 
-(https://github.com/Adalab/project-promo-i-module-2-team-2-afternoon)
+(http://beta.adalab.es/project-promo-i-module-3-team-1-new/)
 
