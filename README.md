@@ -45,32 +45,33 @@
 
 ## Mejoras propuestas al cliente
 
-* Loader - De esta forma el cliente sabe que la web está cargando, mejora la experiencia del usuario.
+* :cyclone: Loader - De esta forma el cliente sabe que la web está cargando, mejora la experiencia del usuario.
 
-* DarkMode - Alarga la batería de nuestros dispositivos, menor impacto en la vista.
+* 🔆  🌚  DarkMode - Alarga la batería de nuestros dispositivos, menor impacto en la vista.
 
-* Mejoras visuales - Color en los collapsables para destacar su función.
-
-
-
-## Mejoras propuestas al cliente 
+* :zap: Mejoras visuales - Color en los collapsables para destacar su función.
 
 
-Necesitarás instalar [Node.js](https://nodejs.org/) y [Gulp](https://gulpjs.com) para trabajar con este repositorio, luego:
 
-1. Descarga o clona el repositorio.
+## Instalación :mag_right:
+
+
+Necesitarás instalar  📋 [Node.js](https://nodejs.org/) para trabajar con este repositorio, luego:
+
+1. Descarga o clona el repositorio
 ```sh
-$ git clone https://github.com/Adalab/project-promo-i-module-2-team-2-afternoon.git
+$ git clone https://github.com/Adalab/project-promo-i-module-3-team-3-afternoon
 ```
-2. Abre el proyecto en tu editor de codigo (Visual Sudio Code, Atom, Brackets...) :rocket:
+2. Abre el proyecto en tu editor de codigo (Visual Sudio Code, Atom, Brackets...)
 
 3. Instala las dependencias locales
 ```sh
 $ npm install
 ```
-4. Arranca el kit con `gulp`
+4. Arranca el proyecto:
 ```sh
-$ gulp
+$ npm start
+```
 ```
 
 ## Especificaciones
