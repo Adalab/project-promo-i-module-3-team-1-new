@@ -8,10 +8,6 @@ import PropTypes from 'prop-types';
 
 class FormAside extends React.Component {
 
-constructor(props) {
-    super(props);
-    
-  }
 
   render() {
     return (
@@ -104,7 +100,7 @@ FormAside.propTypes = {
 valueName:PropTypes.string.isRequired,
 valueJob:PropTypes.string.isRequired,
 valueEmail: PropTypes.string.isRequired,
-valuePhone: PropTypes.number,
+valuePhone: PropTypes.string,
 valueLinkedin:PropTypes.string.isRequired,
 valueGithub:PropTypes.string.isRequired,
 }

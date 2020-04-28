@@ -5,9 +5,6 @@ import ProfilePage from './ProfilePage/ComponentsPreview/ProfilePage';
 import LandingPage from './Landing/LandingPage';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

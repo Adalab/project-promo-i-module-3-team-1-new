@@ -10,29 +10,25 @@ class AllPageHeader extends React.Component {
   }
 
   UpdateMode(evt){
-    console.log(evt)
     this.props.handleSwitchMode(evt.currentTarget.value)
   }
   render() {
     return (
       <div id="allPageHeader" className="allPageHeader">
-        <header class="page_header">
+        <header className="page_header">
           <Link to="/">
             <div className="header-image-container">
-              <a href="./index.html" className="link-logo" title="Awesome profile-cards" />
               <img className="header-awesome-image" src={this.props.mode === true ? logo2 : logo} alt="Awesome profile-cards"
                 title="Awesome profile-cards" />
 
             </div>
           </Link>
           <div className="button-container">
-            <label class="switch">
+            <label className="switch">
               <input type="checkbox" onClick={this.UpdateMode} value={this.props.mode}/>
-              <span class="slider round"></span>
+              <span className="slider round"></span>
             </label>
           </div>
-
-
         </header>
       </div>
     );

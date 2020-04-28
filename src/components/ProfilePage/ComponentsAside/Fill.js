@@ -4,12 +4,6 @@ import Avatar from './Avatar';
 
 
 class Fill extends React.Component{
-    constructor(props){
-        super(props);
-     
-        
-    };
-   
     render(){
         return(
             <section  className={`form__sections ${this.props.mode === true ? 'Darkform__fill' : "form__fill"}`}>

@@ -46,10 +46,7 @@ class ProfilePageBody extends React.Component {
 
     }
   }
-
- 
-
-
+  
 validationEmail(valueName, valueTarget) {
 
   if (valueName === 'email') {

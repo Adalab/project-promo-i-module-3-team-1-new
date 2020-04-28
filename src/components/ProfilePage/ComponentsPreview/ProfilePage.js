@@ -12,8 +12,6 @@ class ProfilePage extends React.Component {
         mode: false,
       }
     }
-
-    
     handleSwitchMode() {
       this.setState(prevState => {
         return {
@@ -21,10 +19,7 @@ class ProfilePage extends React.Component {
         }
       })
     }
-
-
     render() {
-      console.log(this.state.mode)
           return (
               <div id="profilePage" 
               className={`${this.state.mode === true ? 'darkProfilePage' : 'profilePage'}`}>

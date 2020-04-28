@@ -3,9 +3,6 @@ import logo from '../../images/awesome_logo.svg'
 import {Link} from 'react-router-dom';
 
 class LandingPageBody extends React.Component {
-    constructor(props) {
-      super(props);
-    }
     render() {
           return (
                <div id="landingPageBody" className="landingPageBody page_main">
@@ -39,7 +36,6 @@ class LandingPageBody extends React.Component {
                       </div>
                     </div>
                     <div className="button-container">
-                      <a href="./card.html" arial-label="Botón: Comenzar"/>
                       <Link className="ldng-btn" to="/profilepage">
                           <button type="button" className="button" title="Botón: Comenzar">
                             comenzar

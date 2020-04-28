@@ -1,18 +1,13 @@
 import React from 'react';
-
-
 class CollapsableItem extends React.Component {
     constructor(props) {
         super(props);
         this.handleCLick = this.handleCLick.bind(this)
     }
-
     handleCLick(evt){
         this.props.handleCollapse(evt.currentTarget.id)
     }
-
     render() {
-        
         return (
            <div className="Collapsable__container">
                 <div id={this.props.id} className={`${this.props.mode === true ? 'DarkcollapseTitle' : "collapseTitle"}`} onClick={this.handleCLick}>

@@ -6,7 +6,6 @@ class Design extends React.Component {
         super(props);
         this.handlePaletteChange = this.handlePaletteChange.bind(this);
     }
-
     handlePaletteChange(event) {
         this.props.handleInputValue(event.currentTarget.name, event.currentTarget.value)
     }
