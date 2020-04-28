@@ -18,20 +18,6 @@
 
 ![default-avatar](https://user-images.githubusercontent.com/60300665/80500836-fa7b1680-896e-11ea-9135-0afb10f9d1ab.gif)
 
-## Tabla de contenidos
-- [Demo](#demo)
-- [Equipo](#equipo)
-- [Objetivos](#objetivos)
-- [Instalación](#instalación)
-- [Especificaciones](#especificaciones)
-- [Metodología](#metodología-de-trabajo)
-    - [Scrum](#scrum)
-    - [GitHub](#github)
-- [Roadmap](#roadmap)
-- [Contribuye](#contribuye)
-- [Ecofriendly](#ecofriendly)
-- [Recursos](#recursos-interesantes)
-
 
 ## :dart: Objetivos 
 
@@ -115,7 +101,7 @@
 
 ## :iphone: :computer:  Demo 
 
--  [Awesome Profile Cards](#link)
+-  [Awesome Profile Cards]
 
 ![animals](https://user-images.githubusercontent.com/60300665/80508130-ef78b400-8977-11ea-8e7b-65aecb969ce6.gif)
 
@@ -124,7 +110,7 @@
 <img width="1440" alt="Captura de pantalla 2020-04-28 a las 16 31 55" src="https://user-images.githubusercontent.com/60300665/80501006-34e4b380-896f-11ea-8c57-ab40f19e1be8.png">
 <img width="1438" alt="Captura de pantalla 2020-04-28 a las 16 33 34" src="https://user-images.githubusercontent.com/60300665/80501011-3615e080-896f-11ea-891b-81aec14c8e08.png">
 
-## Mejoras propuestas al cliente
+## :sparkles:Mejoras propuestas al cliente
 
 * :cyclone: Loader - De esta forma el cliente sabe que la web está cargando, mejora la experiencia del usuario.
 
@@ -133,7 +119,7 @@
 * :zap: Mejoras visuales - Color en los collapsables para destacar su función.
 
 
-## Metodología de trabajo
+## :busts_in_silhouette: Metodología de trabajo
 ### Scrum
 
 - :bulb: Sprint planning: Decidimos entre todo el equipo que tareas (product backlog) realizariamos.
@@ -146,7 +132,7 @@
 
 Esta metodología nos ha permitido cumplir con los objetivos propuesto a la vez que evolucionar con nuestro aprendizaje.
 
-### :wrench: Tech 
+## :wrench: Tech 
 
 * [ReactJS] (https://reactjs.org/docs/getting-started.html) React Docs!
 * [Sass] (https://sass-lang.com/) Sass Docs.
@@ -159,7 +145,7 @@ Esta metodología nos ha permitido cumplir con los objetivos propuesto a la vez 
 * [Twitter Deveoper](https://developer.twitter.com/en)
 
 
-## Instalación :mag_right:
+## :mag_right:Instalación 
 
 
 Necesitarás instalar  📋 [Node.js](https://nodejs.org/) para trabajar con este repositorio, luego:
