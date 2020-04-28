@@ -133,6 +133,32 @@
 * :zap: Mejoras visuales - Color en los collapsables para destacar su función.
 
 
+## Metodología de trabajo
+### Scrum
+
+- :bulb: Sprint planning: Decidimos entre todo el equipo que tareas (product backlog) realizariamos.
+
+- :ok_hand: Dailys diarios:El equipo ha permanecido en constante comunicación y conociendo en todo momento como se encuentra el proyecto.
+
+- :battery: :battery: Para la realización de este proyecto trabajamos en 2 sprints en total.
+
+- :hourglass_flowing_sand: Al final de cada sprint hicimos una demo para presentar los resultados conseguidos, y una retrospectiva (retro) para evaluar nuestro trabajo en equipo y mejorar en el siguiente sprint.
+
+Esta metodología nos ha permitido cumplir con los objetivos propuesto a la vez que evolucionar con nuestro aprendizaje.
+
+### GitHub
+Control de versiones :bookmark:
+- Ramas: A lo largo del proyecto hemos trabajado creando una rama permanente para cada scprint, y multiples ramas puntuales para crear o modificar algunas funcionalidades. 
+
+- Pull Request y revisión de código:twisted_rightwards_arrows: : para este proyecto hemos usado la funcionalidad de Pull Request que consiste en que un equipo crea la rama, ejecuta la tarea y la sube a la rama remota, pero no la fusiona todavía, antes crea un Pull Request. De esta forma un equipo o algún miembro del equipo se encarga de revisar el código y dar el visto bueno a la fusión. 
+
+ 
+## Contribuye
+1.  Haz un Fork 
+2.  Crea una nueva rama (`git checkout -b feature/fooBar`)
+3.  Haz commit con los cambios (`git commit -am 'Add some fooBar'`)
+4.  Haz push en tu rama (`git push origin feature/fooBar`)
+5.  Crea un nuevo Pull Request
 
 ## Instalación :mag_right:
 
@@ -153,118 +179,3 @@ $ npm install
 ```sh
 $ npm start
 ```
-
-## Metodología de trabajo
-### Scrum
-
-- Para la realización de este proyecto trabajamos en 2 sprints.
-
-- Dedicamos el primer día a la planificación del sprint y el resto a trabajar en el desarrollo del proyecto. :ok_hand:
-
-- Para este proyecto trabajamos siguiento la metodología Scrum, que consta de formar equipos auto-organizados y multifuncionales. Auto-organizados hace referencia a que los equipos elegimos la mejor opción de llevar a cabo el trabajo y no somos dirigidos por personas externas. Al ser multifuncionales, contamos con las competencias necesarias para llevar a cabo el trabajo. Este modelo de equipo está diseñado para optimizar la flexibilidad, la creatividad y la productividad. El objetivo final es entregar productos de forma iterativa e incremental, maximizando el aprendizaje de cada iteración. :white_check_mark:
-
-- Para cada sprint elegimos una Scrum Master que tenía especial atención en que el equipo siguiera los principios Scrum, agilizar los impedimentos que encontrabamos, facilitar las reuniones y las Daily Meeting
-
-- Al final de cada sprint hicimos una demo para presentar los resultados conseguidos, y una retrospectiva (retro) para evaluar nuestro trabajo en equipo y mejorar en el siguiente sprint.
-
-### GitHub
-Control de versiones :bookmark:
-- Ramas: A lo largo del proyecto hemos trabajado creando una rama permanente para cada scprint, y multiples ramas puntuales para crear o modificar algunas funcionalidades. 
-
-- Pull Request y revisión de código:twisted_rightwards_arrows: : para este proyecto hemos usado la funcionalidad de Pull Request que consiste en que un equipo crea la rama, ejecuta la tarea y la sube a la rama remota, pero no la fusiona todavía, antes crea un Pull Request. De esta forma un equipo o algún miembro del equipo se encarga de revisar el código y dar el visto bueno a la fusión. 
-
-## Roadmap
- - [x] Primera versión simple de la web
- - [x] Formulario interactivo
- - [x] Funcionalidad para elegir el estilo de la tarjeta
- - [x] Generar vista previa de la tarjeta 
- - [x] Activar el botón Reset para poner datos por defecto
- - [x] Funcionalidad para cargar la foto
- - [x] Manejo de datos con LocalStorage
- - [x] Permitir que el usuario pueda compartir su tarjeta de visita por Twitter
- - [ ] Presentación final
- 
-## Contribuye
-1.  Haz un Fork ([https://github.com/yourname/yourproject/fork](https://github.com/yourname/yourproject/fork))
-2.  Crea una nueva rama (`git checkout -b feature/fooBar`)
-3.  Haz commit con los cambios (`git commit -am 'Add some fooBar'`)
-4.  Haz push en tu rama (`git push origin feature/fooBar`)
-5.  Crea un nuevo Pull Request
-
-
-## Ecofriendly
-- Sabemos que sólo tenemos un planeta,.. why not go digital? :green_heart:
-
-## Recursos interesantes
-* [Adalab](https://adalab.es/)
-* [Modulo JavaScript](https://books.adalab.es/materiales-front-end-i/modulo-2.-programando-la-web/2_1_intro_a_la_programacion)
-* [w3schools](https://www.w3schools.com/js/)
-* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [CodePen](https://codepen.io/)
-* [Git commit emojis](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)
-
-
-In the project directory, you can run:
-### `npm install`
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
