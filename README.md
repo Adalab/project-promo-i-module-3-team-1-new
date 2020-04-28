@@ -1,18 +1,18 @@
 
 <h3 align="center">Hola! Somos React Rocket :rocket:  </a></h3>
 
- :speech_balloon: Un grupo de programadoras basadas en Madrid, con conocimientos en HTML5,CSS3(SASS),JAVASCRIPT Y REACT!
+ :speech_balloon: Un grupo de programadoras residentes en Madrid, con conocimientos en HTML5,CSS3(SASS),JAVASCRIPT Y REACT!
  => En este repositorio podéis encontrar nuestro último proyecto hecho en REACT JS , un creador de tarjetas personalizadas que además podrás compartir en Twitter 🙌
 
 
 
 ## Desarrolladoras
 
-:octocat:| Maria Blanco | [GitHub](https://github.com/mablancoalvarez) 
+:octocat:| Maria Blanco | [GitHub](https://github.com/mablancoalvarez) | La coach del equipo, tiene fuentes que dicen que todo irá bien...
 
-:octocat:| Patricia Ramos | [GitHub](https://github.com/patriciaramosf)
+:octocat:| Patricia Ramos | [GitHub](https://github.com/patriciaramosf) | En búsqueda del ternario imposible
 
-:octocat:| Maria Mateo | [GitHub](https://github.com/memematvaz) 
+:octocat:| Maria Mateo | [GitHub](https://github.com/memematvaz) | Zoom master
   
 
 
