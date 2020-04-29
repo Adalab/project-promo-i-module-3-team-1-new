@@ -14,8 +14,6 @@
 
 :octocat:| Maria Mateo | [GitHub](https://github.com/memematvaz) | Zoom master
 
-:octocat: |Elvira | ahora no encontramos tu Github pero mereces mención por todo lo que nos has ayudado GRACIAS!!! <3
-  
 
 
 ![default-avatar](https://user-images.githubusercontent.com/60300665/80500836-fa7b1680-896e-11ea-9135-0afb10f9d1ab.gif)
@@ -178,6 +176,10 @@ $ npm install
 ```sh
 $ npm start
 ```
+
+## :blush: Agradecimiento 
+
+Mil gracias a cada una de nuestras compañeras en especial a Elvi, por ser una más en el equipo!
 
 ## :round_pushpin:
 
